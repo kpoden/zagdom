@@ -1,0 +1,62 @@
+<div class="container">
+    <h1 class="red_title">Закажите дом своей мечты</h1>
+    <h1 class="black_title">по любой из представленных технологий</h1>
+    <div class="form-section">
+        <div class="form-group first_group">
+            <label class="group_title">Выберите технологию</label>
+            <label class="radio-label"><input type="radio" data-price="3000000" name="technology" value="frame" checked> <div class="radio-custom"></div> <div class="input_text"><span class="chose_name">Каркас</span> <span>от 3 000 000 ₽</span></div></label>
+            <label class="radio-label"><input type="radio" data-price="3000000" name="technology" value="brick"> <div class="radio-custom"></div> <div class="input_text"><span class="chose_name">Кирпич</span><span>от 3 000 000 ₽</span></div></label>
+            <label class="radio-label"><input type="radio" data-price="3000000" name="technology" value="foam-block"> <div class="radio-custom"></div> <div class="input_text"><span class="chose_name">Пеноблок</span> <span>от 3 000 000 ₽</span></div></label>
+            <label class="radio-label"><input type="radio" data-price="3000000" name="technology" value="gas-block"> <div class="radio-custom"></div> <div class="input_text"><span class="chose_name">Газоблок</span> <span>от 3 000 000 ₽</span></div></label>
+            <label class="radio-label"><input type="radio" data-price="3000000" name="technology" value="sip-panels"> <div class="radio-custom"></div> <div class="input_text"><span class="chose_name">СИП-панели</span> <span>от 3 000 000 ₽</span></div></label>
+            <label class="radio-label"><input type="radio" data-price="3000000" name="technology" value="arbolit"> <div class="radio-custom"></div> <div class="input_text"><span class="chose_name">Арболит</span> <span>от 3 000 000 ₽</span></div></label>
+            <label class="radio-label"><input type="radio" data-price="3000000" name="technology" value="ceramic-block"> <div class="radio-custom"></div> <div class="input_text"><span class="chose_name">Керамический блок</span> <span>от 3 000 000 ₽</span></div></label>
+        </div>
+        <div class="form-group second_group">
+            <label class="group_title">Выберите комплектацию</label>
+            <label class="radio-label"><input type="radio" data-price="3000000" name="package" value="package1" checked> <div class="radio-custom"></div> <div class="input_text_second"><span class="chose_name">Комплектация 1</span></div><span class="chose_text">Фундамент, силовой каркас, крыша</span></label>
+            <label class="radio-label"><input type="radio" data-price="4000000" name="package" value="package2"> <div class="radio-custom"></div> <div class="input_text_second"><span class="chose_name">Комплектация 2</span></div><span class="chose_text">Комплектация 1 + теплый контур + утепление + подготовка для фасада + подготовка для отделки внутри + оконные и дверные конструкции + плиты для инженерных сетей</span></label>
+            <label class="radio-label"><input type="radio" data-price="5000000" name="package" value="package3"> <div class="radio-custom"></div> <div class="input_text_second"><span class="chose_name">Комплектация 3</span></div><span class="chose_text">Комплектация 2 + отделка фасада под ключ + внутренняя предчистовая отделка пола и стен + инженерные сети уложены с разводкой внутри дома</span></label>
+        </div>
+    </div>
+    <div class="form_footer">
+        <div class="summary">Итого: <span class="price">6 000 000</span> ₽
+        </div>
+        <div class="buttons">
+            <a class="PDF_form" href="#">скачать PDF <img src="images/projects/file.svg" alt=""></a>
+            <button class="button_s">Получить точный расчет</button>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const technologyRadios = document.querySelectorAll('input[name="technology"]');
+        const packageRadios = document.querySelectorAll('input[name="package"]');
+        const priceSpan = document.querySelector('.price');
+
+        function updatePrice() {
+            const selectedTechnology = document.querySelector('input[name="technology"]:checked');
+            const selectedPackage = document.querySelector('input[name="package"]:checked');
+            
+            const technologyPrice = parseInt(selectedTechnology.getAttribute('data-price'));
+            const packagePrice = parseInt(selectedPackage.getAttribute('data-price'));
+            
+            const totalPrice = technologyPrice + packagePrice;
+            
+            priceSpan.textContent = totalPrice.toLocaleString('ru-RU');
+        }
+
+        technologyRadios.forEach(radio => {
+            radio.addEventListener('change', updatePrice);
+        });
+
+        packageRadios.forEach(radio => {
+            radio.addEventListener('change', updatePrice);
+        });
+
+        // Initial calculation
+        updatePrice();
+    });
+</script>
+</body>
+</html>

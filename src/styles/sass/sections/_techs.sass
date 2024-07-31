@@ -1,0 +1,121 @@
+.techs
+    padding-bottom: 150px
+
+    +mw(800)
+        padding-bottom: 60px
+
+    .techs__inner
+        .swiper-wrapper
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 25px
+
+            +mw(800)
+                display: flex
+                grid-gap: 0
+
+            
+
+        
+        
+            .techs__item
+                position: relative
+                display: flex
+                flex-direction: column
+                gap: 15px
+                overflow: hidden
+
+
+
+                .techs__img
+                    width: 100%
+                    height: 285px
+                    overflow: hidden
+
+                    &:hover img
+                        transform: scale(1.2)
+
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        transition: .4s ease-in-out
+
+                .techs__label
+                    position: absolute
+                    z-index: 10
+                    top: 20px
+                    left: 20px
+                    border-radius: 100px
+                    background: #fff
+                    box-shadow: 2px 2px 4px 0px rgba(212, 212, 212, 0.25)
+                    padding: 5px 10px
+                    font-size: 14px
+                    font-weight: 500
+                    line-height: 16.8px
+
+
+
+
+                .techs__bottom
+                    position: relative
+                    z-index: 10
+                    width: 100%
+                    color: var(--c-dark)
+                    
+
+
+                .techs__info-info
+                    display: flex
+                    justify-content: space-between
+                    padding-bottom: 10px
+
+                .techs__info-name
+                    font-size: 20px
+                    font-weight: 700
+                    line-height: 24px
+                    text-align: left
+
+
+                .techs__info-price
+                    font-size: 16px
+                    font-weight: 700
+                    line-height: 19px
+                    flex-shrink: 0
+
+
+                .techs__info-more
+                    font-size: 14px
+                    font-weight: 600
+                    line-height: 16.8px
+                    text-align: left
+                    position: relative
+                    display: inline-block
+                    cursor: pointer
+                    color: var(--c-red)
+
+                    &::after
+                        content: ""
+                        border: 1px var(--c-red) solid
+                        border-width: 2px 2px 0 0 
+                        width: 10px
+                        height: 10px
+                        position: absolute
+                        right: -20px
+                        top: 60%
+                        transform: translateY(-50%) rotate(45deg)
+                        transition: .2s
+
+                        
+
+
+                    &:hover
+                        color: var(--c-red)
+
+                        &::after
+                            border-color: var(--c-red)
+                            right: -25px
+
+
+
+       

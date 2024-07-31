@@ -1,0 +1,27 @@
+.btn
+    width: 100%
+    background: #fff
+    color: var(--c-dark)
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .2s
+    cursor: pointer
+    text-align: center
+    height: 52px
+    border-radius: 4px
+
+    +mw(600)
+        font-weight: 700
+
+    &:hover
+        background: rgba(209, 23, 22, 1)
+        color: #fff
+
+
+    &__red
+        background: var(--c-red)
+        color: #fff
+
+        &:hover
+            background: rgba(209, 23, 22, 1)

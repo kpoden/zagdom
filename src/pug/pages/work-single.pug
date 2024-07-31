@@ -1,0 +1,42 @@
+doctype html 
+html(lang="ru-RU")
+    include ../layout/head
+    body
+        .overlay
+        .container.works-page
+        
+            include ../layout/header
+
+            main
+                .breadcrumbs.wrapper
+                    a.breadcrumbs__item(href="/") Строительство домов
+                    a.breadcrumbs__item(href="/") Наши работы
+                    .breadcrumbs__item.cur Дом каркасаный КС-06/2
+
+                
+
+
+                include ../layout/works/work-detail.pug
+
+                include ../layout/works/plan.pug
+
+                include ../layout/meet.pug
+
+                include ../layout/works/other-works-single.pug
+
+                include ../layout/quiz.pug
+
+                include ../layout/footer.pug
+
+
+
+
+
+
+
+
+    
+
+        include ../components/mob-menu.pug
+        include ../components/mob-menu-fixed
+

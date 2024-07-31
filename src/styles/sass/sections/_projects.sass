@@ -1,0 +1,299 @@
+.projects
+    background: var(--c-light-grey)
+    margin-bottom: 150px
+
+    +mw(800)
+        margin-bottom: 60px
+
+    .projects__inner
+        padding: 60px 0
+
+        +mw(800)
+            padding: 30px 0
+
+        .projects__tabs
+            margin-top: 40px
+            margin-bottom: 40px
+
+            +mw(800)
+                margin-top: 0
+                margin-bottom: 20px
+
+        .tabs
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 30px
+
+            +mw(800)
+                display: flex
+                overflow-x: auto
+                padding-bottom: 10px
+                grid-gap: 15px
+
+
+
+            .tab
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 4px
+                background-color: #fff
+                border: rgba(231, 231, 231, 1) 1px solid
+                padding: 10px
+                cursor: pointer
+                flex-shrink: 0
+                font-size: 20px
+                font-weight: 400
+                line-height: 24px
+                color: var(--c-dark)
+                text-align: center
+
+                +mw(800)
+                    min-width: 155px
+                    font-size: 16px
+                    font-weight: 500
+                    line-height: 19.2px
+                    padding: 12px
+
+
+
+
+
+                &.active-tab
+                    border: transparent 1px solid
+                    color: #fff
+                    background: var(--c-dark)
+
+
+                &:hover
+
+
+                +mw(900)
+
+        .projects__list
+            position: relative
+
+            .projects__section
+                
+
+.projects__section-inner
+    padding-bottom: 100px
+    position: relative
+    margin-left: -35px
+    margin-right: -35px
+    padding: 0 35px 40px
+
+    &::before
+        content: ""
+        height: 100%
+        background: red
+        width: 30px
+        position: absolute
+        left: 0
+        z-index: 10
+        background: var(--c-light-grey)
+        top: 0
+
+    &::after
+        content: ""
+        height: 100%
+        background: red
+        width: 30px
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 10
+        background: var(--c-light-grey)
+
+    +mw(800)
+        padding-bottom: 30px
+
+
+    .slider__nav-wrap
+        display: flex
+
+        .slider__arr
+            display: none
+
+            +mw(800)
+                display: block
+
+    .swiper-wrapper
+
+        
+
+
+
+    .swiper-pagination
+        bottom: 40px
+
+        +mw(800)
+            display: none
+
+        .swiper-pagination-bullet
+            background: rgba(231, 231, 231, 1)
+            width: 15px
+            height: 15px
+            opacity: 1
+            margin: 0 10px
+
+        .swiper-pagination-bullet-active
+            background: var(--c-red)
+
+
+.projects__calc
+    max-width: 390px
+    margin: 0 auto
+    
+    +mw(800)
+        height: 48px
+        font-weight: 700
+        font-size: 14px
+            
+
+
+.projects__arrs
+
+    +mw(800)
+        display: none
+
+    .projects__arr
+        width: 70px
+        height: 70px
+        border-radius: 100px
+        background: #fff
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        transition: .2s
+        position: absolute
+        top: 36%
+        z-index: 15
+        transition: .2s
+        color: var(--c-dark)
+        border: 2px solid rgba(231, 231, 231, 1)
+
+        &:hover
+            background: var(--c-light-grey)
+
+        &.swiper-button-disabled
+            opacity: 0
+            visibility: hidden
+
+    .arr-r
+        right: 0px
+    .arr-l
+        left: 0px
+
+
+
+.projects__item
+    background: rgba(245, 245, 245, 1)
+    border-radius: 4px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    overflow: hidden
+    box-shadow: 2px 2px 20px 0px rgba(198, 198, 198, 0.25)
+    position: relative
+
+
+    .projects__labels
+        position: absolute
+        left: 10px
+        top: 10px
+        display: flex
+        gap: 5px
+
+        .projects__label
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 2px 2px 4px 0px rgba(166, 166, 166, 0.25);
+            padding: 2px 7px
+            border-radius: 10px
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.8px;
+            color: rgba(46, 46, 46, 0.7)
+
+            +mw(800)
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.4px;
+
+
+
+
+
+
+
+    .projects__img
+        position: relative
+        height: 215px
+
+        img
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    .projects__info
+        padding: 20px 20px 30px
+
+        .projects__bottom
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+
+        .projects__square
+            font-size: 22px
+            font-weight: 400
+            line-height: 26.4px
+
+
+
+        .projects__name
+            font-size: 20px
+            font-weight: 700
+            line-height: 24px
+            padding-bottom: 15px
+
+        .projects__chars
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            padding-bottom: 30px
+
+        .projects__char
+            display: flex
+            flex-direction: column
+            gap: 5px
+            align-items: center
+            border-right: rgba(217, 217, 217, 1) solid 1px
+
+            &:last-child
+                border-right: none
+
+            &-name
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.8px;
+
+
+            &-value
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 16.8px;
+
+        .projects__price
+            display: flex
+            justify-content: space-between
+
+
+            &-value
+                font-size: 20px
+                font-weight: 700
+                line-height: 24px
+                color: var(--c-red)

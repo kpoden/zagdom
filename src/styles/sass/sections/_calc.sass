@@ -1,0 +1,149 @@
+.calc
+    padding-bottom: 150px
+
+    +mw(800)
+        padding-bottom: 60px
+.calc__inner 
+    display: flex
+    align-items: center
+    gap: 74px
+
+    +mw(1350)
+        gap: 30px
+
+    +mw(1200)
+        flex-direction: column
+        align-items: flex-start
+
+    +mw(800)
+        padding-bottom: 0px
+    
+
+
+    .calc__form
+        width: 100%
+        max-width: 730px
+        background: rgba(246, 246, 246, 1)
+        padding: 40px 55px 60px 55px
+        border-radius: 8px
+        overflow: hidden
+
+        +mw(1350)
+            padding: 30px 20px 30px 20px
+            max-width: 600px
+
+        +mw(1200)
+            max-width: 100%
+
+        .calc__form-title
+            font-size: 30px
+            font-weight: 500
+            line-height: 36px
+            padding-bottom: 30px
+
+            +mw(800)
+                padding-bottom: 20px
+                font-size: 18px
+                line-height: 22px
+            
+
+
+        .calc__form-input-wrap
+            margin-bottom: 30px
+
+            +mw(800)
+                margin-bottom: 15px
+
+        .calc__form-input-title 
+            font-size: 14px
+            font-weight: 400
+            line-height: 16.8px
+            padding-bottom: 10px
+            color: rgba(46, 46, 46, 0.7)
+
+                
+
+
+        .calc__form-input-inp
+
+        .calc__form-input-line
+            display: flex
+            gap: 30px
+            margin-bottom: 30px
+
+            +mw(800)
+                flex-direction: column
+                gap: 10px
+
+            .calc__form-input-title 
+                width: 100%
+
+            .calc__form-input-wrap
+                width: 100%
+                margin-bottom: 0
+
+            .calc__form-input-inp
+
+        .calc__range
+            margin-top: 20px
+
+        .calc__pips 
+            display: flex
+            justify-content: space-between
+            margin-top: 20px
+
+            .calc__pip
+                font-size: 16px
+                font-weight: 400
+                line-height: 19.2px
+
+                +mw(800)
+                    font-size: 14px
+
+
+    .calc__result
+        flex: 1
+        flex-shrink: 0
+
+        +mw(1200)
+            width: 100%
+
+        .calc__result-wrap
+            display: flex
+            justify-content: space-between
+            padding-bottom: 30px
+            gap: 15px
+            width: 100%
+
+            +mw(1200)
+                flex-direction: column
+                padding-bottom: 20px
+
+            .calc__result-name
+                font-size: 26px
+                font-weight: 500
+                line-height: 31.2px
+                color: rgba(46, 46, 46, 0.7)
+
+                +mw(800)
+                    font-size: 18px
+                    line-height: 21px
+
+            .calc__result-value
+                font-size: 24px
+                font-weight: 700
+                line-height: 31.2px
+                color: rgba(46, 46, 46, 1)
+
+                +mw(800)
+                    font-size: 19px
+                    line-height: 23px
+
+                img
+                    width: 80px
+
+        .calc__btn
+            margin-top: 20px
+
+            +mw(800)
+                margin-top: 10px

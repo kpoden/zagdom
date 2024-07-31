@@ -1,0 +1,260 @@
+h1 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.red_title {
+    font-size: 35px;
+    color: #B11413;
+    margin: 0;
+}
+.black_title {
+    font-size: 35px;
+    color: #2E2E2E;
+    margin: 0 0 0 105px;
+}
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.form-group {
+    width: 48%;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.form-group .group_title {
+    font-size: 20px;
+    color: rgba(46, 46, 46, 0.7);
+}
+.form-group label input[type="radio"] {
+    display: none;
+}
+.form-group label span {
+    display: block;
+    font-weight: normal;
+}
+.form-group label {
+    display: flex;
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+    padding: 0 0 5px 0;
+}
+.input_text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.chose_name {
+    font-size: 15px;
+    color: rgba(46, 46, 46, 0.7);
+    margin: 0 0 0 25px;
+}
+.input_text_second {
+    display: flex;
+    align-items: center;
+    
+}
+.chose_text {
+    color: rgba(46, 46, 46, 0.7);
+    margin: 5px;
+}
+.form_footer {
+    display: flex;
+    align-items: center;
+}
+.summary {
+    text-align: right;
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: bold;
+    flex: 0 0 50%;
+    display: flex;
+}
+.buttons {
+    margin-top: 20px;
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.buttons button {
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+}
+.PDF_form {
+    background: transparent;
+    color: rgba(177, 20, 19, 1);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 50px 0 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+.PDF_form img {
+    margin: 0 0 0 5px;
+}
+.button_s {
+    background: rgba(177, 20, 19, 1);
+    padding: 15px 72px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.price {
+    margin: 0 0 0 10px;
+}
+
+
+.radio-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgba(46, 46, 46, 0.7);
+    display: flex;
+    align-items: center;
+}
+.radio-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.radio-label .radio-custom {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    height: 11px;
+    width: 11px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid rgba(177, 20, 19, 1); 
+}
+.radio-label input:checked ~ .radio-custom:after {
+    display: block;
+}
+.radio-label .radio-custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 2px;
+    left: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(177, 20, 19, 1);
+}
+
+.second_group .radio-custom {
+    border-color: rgba(46, 46, 46, 0.7); 
+}
+.second_group .radio-label{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+    .form-section {
+        flex-direction: column;
+    }
+    .form-group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .black_title {
+        margin-left: 0;
+    }
+    .summary, .buttons {
+        flex: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .buttons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .PDF_form {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .red_title, .black_title {
+        font-size: 28px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .form-section {
+        flex-direction: column;
+    }
+    .form-group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form_footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .summary, .buttons {
+        flex: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .PDF_form {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .button_s {
+        padding: 10px 40px;
+        font-size: 12px;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .red_title, .black_title {
+        font-size: 20px;
+        text-align: center;
+        margin: 5px 0;
+    }
+    .form-group .group_title {
+        font-size: 18px;
+    }
+    .radio-label {
+        font-size: 14px;
+    }
+    .form_footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .summary, .buttons {
+        flex: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .PDF_form {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .button_s {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}

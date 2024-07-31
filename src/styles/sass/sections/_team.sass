@@ -1,0 +1,104 @@
+.team
+    padding-bottom: 150px
+
+    +mw(800)
+        padding-bottom: 60px
+
+    .team__inner
+
+        .team__slider
+            overflow: visible
+            position: relative
+
+            &::after
+                content: ""
+                position: absolute
+                right: 100%
+                width: 100vw
+                height: 100%
+                top: 0
+                background: #fff
+                z-index: 10
+
+            .swiper-wrapper
+                overflow-x: visible                    
+
+
+            .team__slide
+                display: flex
+                gap: 15px
+                flex-direction: column
+
+                .team__img
+                    height: 330px
+                    position: relative
+                    border-radius: 8px
+                    overflow: hidden
+
+                    +mw(800)
+                        height: 270px
+
+                    img
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+
+                .team__info
+
+                    .team__name
+                        font-family: HelveticaNeueCyr
+                        font-size: 18px
+                        font-weight: 700
+                        line-height: 21.6px
+                        padding-bottom: 5px
+
+                        +mw(800)
+                            font-size: 14px
+                            line-height: 16.8px
+
+
+
+                    .team__position
+                        font-family: HelveticaNeueCyr
+                        font-size: 16px
+                        font-weight: 400
+                        line-height: 19.2px
+
+                        +mw(800)
+                            font-size: 14px
+                            line-height: 16.8px
+
+
+                        
+
+            .team__arr
+                position: absolute
+                top: 35%
+                z-index: 20
+                color: var(--c-dark)
+                width: 70px
+                height: 70px
+                background: rgba(246, 246, 246, 1);
+                border: 1.56px solid rgba(231, 231, 231, 1)
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 70px
+                transition: .2s
+                cursor: pointer
+
+                &:hover
+                    background: #e7e7e7
+
+                &.arr-l
+                    left: -35px
+                &.arr-r
+                    right: -35px
+
+                &.swiper-button-disabled
+                    opacity: 0
+                    visibility: hidden
+
+                +mw(600)
+                    display: none

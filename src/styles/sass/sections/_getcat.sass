@@ -1,0 +1,174 @@
+.getcat
+    padding-bottom: 150px
+
+    +mw(800)
+        padding-bottom: 60px
+
+    .getcat__inner
+        background-image: url(../images/getcat/getcat.png)
+        height: 550px
+        background-size: cover
+        background-position: center center
+        border-radius: 10px
+        position: relative
+        display: flex
+        align-items: center
+
+        &.getcat3
+            background-image: url('../images/real/1.jpg')
+
+        &.getcat4
+            background-image: url('../images/getcat/getcat4.png')
+
+        +mw(1200)
+            flex-direction: column
+            justify-content: center
+            padding: 90px 20px
+            gap: 30px
+            height: auto
+
+        &::after
+            content: ""
+            position: absolute
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(345.83deg, rgba(56, 56, 56, 0) -49.53%, rgba(56, 56, 56, 0.5) 43.26%);
+            border-radius: 10px
+
+            +mw(800)
+                border-radius: 8px
+
+        +mw(800)
+            border-radius: 8px
+
+            
+
+        .getcat__text
+            flex: 1
+            color: #fff
+            padding-left: 50px
+            z-index: 10
+            display: flex
+            flex-direction: column
+            gap: 20px
+            padding-bottom: 100px
+
+            +mw(1200)
+                padding-bottom: 0
+                align-items: center
+                padding-left: 0px
+                text-align: center
+
+            +mw(800)
+                gap: 10px
+
+            .getcat__title
+                font-size: 60px
+                font-weight: 600
+                line-height: 60px
+
+                +mw(1200)
+                    font-size: 40px
+                    line-height: 40px
+
+
+                +mw(800)
+                    font-size: 24px
+                    line-height: 24px
+
+            .getcat__subtitle
+                font-family: Montserrat
+                font-size: 22px
+                font-weight: 400
+                line-height: 26.4px
+
+                +mw(1200)
+                    font-size: 14px
+                    line-height: 16px
+
+
+        .getcat__form
+            flex: 1
+            padding-right: 50px
+            z-index: 10
+            display: flex
+            flex-direction: column
+
+            +mw(1200)
+                padding-right: 0
+
+            .input-wrap
+                margin-bottom: 15px
+
+                +mw(800)
+                    margin-bottom: 10px
+
+            input
+                font-size: 16px;
+                font-weight: 400;
+
+            .inp-name
+                font-size: 16px;
+                font-weight: 400;
+
+
+            .getcat__soc
+                display: flex
+                gap: 20px
+
+                +mw(800)
+                    gap: 5px
+
+                .getcat__btn
+                    color: #fff
+                    width: 139px
+                    display: flex
+                    gap: 7px
+
+                    +mw(800)
+                        width: 98px
+                        height: 35px
+
+                        svg
+                            width: 18px
+                            height: 18px
+
+                    span
+                        font-size: 16px
+
+                        +mw(800)
+                            font-size: 12px
+                            line-height: 16px
+
+
+
+
+
+                .tg
+                    background: linear-gradient(180deg, #2AABEE 0%, #229ED9 10000%)
+
+
+                .wa
+                    background: linear-gradient(0deg, #1FAF38 -9900%, #60D669 100%)
+
+
+                .vi
+                    background: rgba(114, 77, 246, 1)
+
+
+            .getcat__submit
+                margin-top: 30px
+
+                +mw(800)
+                    margin-top: 20px
+
+            .getcat__policy
+                font-size: 10px
+                line-height: 13px
+                padding-top: 10px
+                max-width: 300px
+                margin: 0 auto
+                text-align: center
+                color: #fff
+
+            

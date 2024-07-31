@@ -1,0 +1,38 @@
+doctype html 
+html(lang="ru-RU")
+    include ../layout/head
+    body
+        .overlay
+        .container.about-page
+        
+            include ../layout/header
+
+            main
+                .breadcrumbs.wrapper
+                    a.breadcrumbs__item(href="/") Главное
+                    .breadcrumbs__item.cur О компании
+
+                
+                
+
+                include ../layout/about/youtube-video.pug
+                include ../layout/about/history.pug
+
+
+                include ../layout/slider-block.pug
+                include ../layout/team.pug
+
+                include ../layout/footer.pug
+
+
+
+
+
+
+
+
+    
+
+        include ../components/mob-menu.pug
+        include ../components/mob-menu-fixed
+

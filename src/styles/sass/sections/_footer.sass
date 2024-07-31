@@ -1,0 +1,211 @@
+footer
+    background: rgba(246, 246, 246, 1)
+.footer
+    
+    padding: 30px 0
+
+    .footer__logo
+        
+        margin-bottom: 30px
+        display: flex
+        justify-content: space-between
+
+        img
+            width: 150px
+
+            +mw(800)
+                width: 107px
+
+    .footer__main
+        display: flex
+        justify-content: space-between
+        padding-bottom: 25px
+        border-bottom: 2px solid rgba(231, 231, 231, 1)
+        
+
+        +mw(1200)
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 50px 30px
+
+        +mw(800)
+            border-bottom: 1px solid rgba(231, 231, 231, 1)
+
+        .footer__cols
+            display: flex
+            gap: 30px
+        .footer__col
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 20px
+            color: var(--c-dark)
+            font-family: Roboto
+
+        .footer__links
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 20px
+            color: var(--c-dark)
+            font-family: Roboto
+
+            &.ft-link-list
+                min-width: 240px
+
+
+            .footer__contacts
+                display: flex
+                flex-direction: column
+                gap: 20px
+                width: 380px
+
+                +mw(800)
+                    gap: 15px
+
+                .footer__contact
+                    display: flex
+                    flex-direction: column
+                    gap: 10px
+
+                    +mw(800)
+                        gap: 10px
+
+                    .footer__contact-name
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19.2px;
+                        flex-shrink: 0
+                        color: rgba(46, 46, 46, 0.7)
+
+
+                        +mw(800)
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 16.8px;
+                            color: rgba(46, 46, 46, 0.7);
+
+
+
+
+                    .footer__contact-value
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 19.2px;
+                        display: flex
+                        flex-direction: column
+                        gap: 15px
+
+                        +mw(800)
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 16.8px;
+
+
+
+
+
+                        .footer__contact-address 
+
+                            +mw(800)
+                                max-width: 200px
+
+                        .footer__contact-soc
+                            display: flex
+                            gap: 10px
+
+                            +mw(800)
+                                display: none
+
+
+
+
+            .footer__link-title
+                font-size: 16px
+                font-weight: 600
+                line-height: 19.2px
+
+
+            .footer__link
+                font-size: 16px
+                font-weight: 400
+                line-height: 19.2px
+
+
+            .footer__links-more
+                font-family: Montserrat
+                font-size: 14px
+                font-weight: 700
+                line-height: 16.8px
+                color: var(--c-red)
+                border-bottom: 1px solid var(--c-red)
+                cursor: pointer
+                transition: .2s
+
+                &:hover
+                    color: var(--c-red-h)
+
+         
+
+    .footer__bottom
+        padding-top: 25px
+
+        .footer__legal
+            padding-bottom: 20px
+            display: flex
+            justify-content: space-between
+
+            +mw(800)
+                flex-direction: column
+                align-items: center
+                gap: 10px
+
+            .footer__ip
+                font-size: 16px
+                font-weight: 600
+                line-height: 19.2px
+                color: rgba(46, 46, 46, 0.7)
+
+                +mw(800)
+                    font-size: 14px
+                    font-weight: 500
+                    line-height: 16.8px
+
+
+
+            .footer__policy
+                font-size: 16px
+                font-weight: 400
+                line-height: 19.2px
+                border-bottom: 1px solid rgba(46, 46, 46, 1)
+
+                +mw(800)
+                    font-size: 14px
+                    font-weight: 500
+                    line-height: 16.8px
+
+
+
+
+        .footer__footnote 
+            font-size: 14px
+            font-weight: 500
+            line-height: 16.8px
+            color: rgba(46, 46, 46, 0.7)
+
+            +mw(800)
+                font-size: 12px
+                font-weight: 500
+                line-height: 14.4px
+
+
+
+    .footer__soc--mob
+        display: flex
+        gap: 5px
+
+        a
+            color: var(--c-red) 
+
+            &:hover
+                color: var(--c-red-h)

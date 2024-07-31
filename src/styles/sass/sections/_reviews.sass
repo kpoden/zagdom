@@ -1,0 +1,112 @@
+.reviews
+    padding-bottom: 150px
+
+    +mw(800)
+        padding-bottom: 60px
+
+    .reviews__inner
+
+        .reviews__slider
+
+            .reviews__slide
+                padding: 30px 40px
+                border-radius: 8px
+                background: var(--c-light-grey)
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                gap: 24px
+
+                +mw(800)
+                    padding: 30px 20px
+
+
+                .reviews__top
+                    display: flex
+                    gap: 20px
+
+                    +mw(800)
+                        gap: 10px
+
+                    .reviews__ava
+                        width: 84px
+                        height: 84px
+                        border-radius: 80px
+                        overflow: hidden
+                        position: relative
+                        flex-shrink: 0
+
+                        +mw(800)
+                            width: 70px
+                            height: 70px
+
+                        img
+                            position: absolute
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+
+                    .reviews__info
+
+                        .reviews__name
+                            font-family: HelveticaNeueCyr
+                            font-size: 16px
+                            font-weight: 700
+                            line-height: 19.54px
+                            color: var(--c-dark)
+                            padding-bottom: 5px
+
+                            +mw(800)
+                                font-family: Montserrat
+                                font-size: 14px
+                                font-weight: 700
+                                line-height: 16.8px
+
+
+
+                        .reviews__date
+                            color: var(--c-dark)
+                            font-family: Montserrat
+                            font-size: 16px
+                            font-weight: 400
+                            line-height: 19.2px
+
+                            +mw(800)
+                                font-family: Montserrat
+                                font-size: 14px
+                                font-weight: 400
+                                line-height: 16.8px
+
+
+
+                        .reviews__stars
+                            display: flex
+                            gap: 8px
+                            margin-top: 10px
+
+                            .reviews__star
+
+                .reviews__text
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 16.8px
+
+                .reviews__link
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 700
+                    line-height: 16.8px
+                    border-bottom: var(--c-red) 1px solid
+                    color: var(--c-red)
+
+                    &:hover
+                        color: var(--c-red-h)
+                        border-bottom: var(--c-red-h) 1px solid
+
+
+                    +mw(800)
+                        font-size: 16px
+                        line-height: 19.2px
+
+

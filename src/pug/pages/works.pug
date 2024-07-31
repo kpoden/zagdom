@@ -1,0 +1,36 @@
+doctype html 
+html(lang="ru-RU")
+    include ../layout/head
+    body
+        .overlay
+        .container.works-page
+        
+            include ../layout/header
+
+            main
+                .breadcrumbs.wrapper
+                    a.breadcrumbs__item(href="/") Главная
+                    a.breadcrumbs__item(href="/") Проекты
+                    .breadcrumbs__item.cur Наши работы
+
+                
+
+                include ../layout/works/works-list.pug
+                include ../layout/works/other-works.pug
+                include ../layout/works/map.pug
+
+
+                include ../layout/footer.pug
+
+
+
+
+
+
+
+
+    
+
+        include ../components/mob-menu.pug
+        include ../components/mob-menu-fixed
+

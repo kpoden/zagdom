@@ -1,0 +1,51 @@
+.plan
+    padding-bottom: 150px
+
+    +mw(800)
+        padding-bottom: 60px
+
+    h2
+        padding-bottom: 40px
+
+    .plan__imgs
+        display: flex
+        gap: 20px
+
+        +mw(900)
+            flex-direction: column
+        
+        .plan__img
+            position: relative
+            height: 660px
+            display: block
+            width: 50%
+            overflow: hidden
+
+            +mw(1200)
+                height: 500px
+
+            +mw(900)
+                width: 100%
+
+            +mw(600)
+                height: 345px
+
+            &:hover svg
+                opacity: 1
+
+            img
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                object-fit: cover
+                transition: .3s
+
+            svg
+                color: var(--c-red)
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                opacity: 0

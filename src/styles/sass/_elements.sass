@@ -1,0 +1,379 @@
+.section-title__wrap 
+    padding-bottom: 40px
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    gap: 20px
+
+    +mw(800)
+        padding-bottom: 30px
+
+    .section-title__inner
+        
+        h2
+            display: flex
+
+            +mw(800)
+                display: block
+
+            
+        span.spacer
+            width: 150px
+            display: block
+
+            +mw(1200)
+                width: 0
+
+    
+    
+.section-title
+    font-size: 30px
+    font-weight: 700
+    line-height: 36px
+    
+    +mw(1200)
+        font-size: 26px
+        line-height: 30px
+
+    +mw(800)
+        font-size: 24px
+        line-height: 24px
+
+
+
+.view-all
+    font-size: 14px
+    font-weight: 700
+    line-height: 16.8px
+    color: var(--c-red)
+    border-bottom: 1px solid var(--c-red)
+    flex-shrink: 0
+
+
+    +mw(800)
+        display: none
+
+
+
+    
+.desktop--only
+
+    +mw(800)
+        display: none !important
+
+
+.mobile--only
+    display: none
+
+    +mw(800)
+        display: block
+
+
+
+
+._locked
+    overflow: hidden
+    height: 100vh
+
+
+.bolder
+    font-weight: bolder
+
+
+.hidden
+    display: none !important
+
+.block
+    display: block !important
+
+.red
+    color: var(--c-red)
+
+.red-s
+    color: red
+
+.yellow
+    color: #F9CC49
+
+.underline
+    text-decoration: underline
+
+
+.unvis
+    opacity: 0
+    visibility: hidden
+
+
+
+
+button
+    background: inherit
+    color: inherit
+
+.input-wrap
+    position: relative
+    width: 100%
+    border-radius: 4px
+
+    .inp:focus + .inp-name
+        display: none
+
+
+
+.inp-name
+    position: absolute
+    left: 20px
+    top: 50%
+    transform: translateY(-50%)
+    color: var(--c-font)
+    font-size: 20px
+    line-height: 24px
+    color: rgba(46, 46, 46, 0.7)
+    transition: .2s
+
+
+
+
+textarea,
+.inp
+    padding: 15px 20px
+    border-radius: 4px
+    width: 100%
+    color: rgba(46, 46, 46, 0.7)
+    font-size: 16px
+    line-height: 16px
+
+    +mw(800)
+        font-size: 16px
+        line-height: 16px
+        padding: 15px 20px
+
+    &::placeholder
+        color: rgba(46, 46, 46, 0.7)
+        font-size: 20px
+        line-height: 24px
+        font-family: Montserrat, Helvetica, Arial, sans-serif
+
+        +mw(750)
+            font-size: 16px
+   
+
+._err-inp
+    border-color: var(--c-red)
+    border-width: 1px
+
+
+._error-txt
+    color:  #C00
+    font-size: 12px
+    font-weight: 500
+    display: block
+    padding-top: 5px
+
+
+._error-input
+    border: 1.5px solid var(--c-red) !important
+    color:  var(--c-red)
+
+
+
+.breadcrumbs
+    display: flex
+    gap: 10px
+    padding: 10px 0 30px
+    flex-wrap: wrap
+
+    +mw(800)
+        padding: 10px 0 20px
+    
+
+
+.breadcrumbs__item
+    border: 1px solid rgba(46, 46, 46, 0.7)
+    font-size: 14px
+    font-weight: 500
+    line-height: 16.8px
+    border-radius: 3px
+    padding: 3px 10px
+
+    +mw(800)
+        font-size: 12px
+        font-weight: 400
+        line-height: 14.4px
+
+    
+
+    &.cur
+        border: 1px solid rgba(231, 231, 231, 1)
+        color: var(--c-dark)
+        opacity: 0.7
+
+
+
+
+
+.tab-block
+    display: none
+
+    &.active-block
+        display: block
+
+.inner-tab-block
+    display: none
+
+    &.active-block
+        display: block
+            
+            
+
+
+.form__attach
+    position: relative
+    cursor: pointer
+    display: flex
+    align-items: center
+
+    
+    &-input
+        position: absolute
+        z-index: -1
+        opacity: 0
+        display: block
+        width: 0
+        height: 0
+
+    &-title
+        display: flex
+        align-items: center
+        gap: 5px
+        font-size: 18px
+        line-height: 100%
+
+        svg
+            flex-shrink: 0
+
+        +mw(1150)
+            font-size: 14px
+
+
+    &-text
+        padding-left: 10px
+        font-weight: 400
+
+.more
+    font-size: 18px
+    font-weight: 600
+    line-height: 21.6px
+    display: flex
+    justify-content: center
+    margin: 50px auto 0
+    padding-bottom: 1px
+    border-bottom: 1px solid rgba(0, 0, 0, 1)
+    width: 234px
+
+    &:hover
+        border-bottom: 1px solid var(--c-red)
+
+
+.light-grey
+    background: #f6f6f6
+
+
+.link__show-all
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    color: var(--c-red)
+    border-bottom: 1px solid var(--c-red)
+    padding-top: 40px
+    width: fit-content
+    margin: 0 auto
+    display: block
+    transition: .2s
+
+    &:hover
+        border-bottom: 1px solid var(--c-red-h)
+
+
+
+
+
+.slider__nav-wrap
+    justify-content: space-between
+    align-items: center
+    margin-top: 30px
+    display: none
+
+    +mw(800)
+        display: flex
+    
+
+    .slider__arr
+        color: var(--c-dark)
+        cursor: pointer
+        position: relative
+        transition: .2s
+        display: flex
+        align-items: center
+
+        &:hover
+            color: var(--c-red)
+
+
+    .slider__nav
+        display: flex
+        justify-content: center
+
+        .swiper-pagination-bullet
+            background: rgba(231, 231, 231, 1);
+            width: 15px
+            height: 15px
+            margin: 0 10px
+            opacity: 1
+            border-radius: 10px
+            transition: .2s
+
+            +mw(800)
+                width: 10px
+                height: 10px
+                margin: 0 7px
+
+
+            &.swiper-pagination-bullet-active
+                background: var(--c-red)
+
+                +mw(800)
+                    width: 40px
+
+
+        
+    .slider__view-all
+        font-size: 16px
+        font-weight: 700
+        line-height: 16px
+        color: var(--c-red)
+        border-bottom: var(--c-red) 1px solid
+
+
+
+.show-more
+    font-size: 14px
+    font-weight: 700
+    line-height: 16.8px
+    border-bottom: 1px solid var(--c-red)
+    color: var(--c-red)
+    transition: .2s
+    width: fit-content
+    margin: 0 auto
+    display: block
+
+    &:hover
+        border-bottom: 1px solid var(--c-red-h)
+        color: var(--c-red-h)
+
+
+.incoming
+    display: none
+
+    +mw(800)
+        display: block

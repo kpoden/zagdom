@@ -1,0 +1,198 @@
+.services
+    padding-bottom: 150px
+
+    +mw(800)
+        padding-bottom: 60px
+    
+.services__inner
+    display: flex
+    flex-direction: column
+    gap: 20px
+    
+    .services__item
+        background: rgba(246, 246, 246, 1)
+        padding: 25px 50px 0px 50px
+        border-radius: 4px
+
+        +mw(800)
+            padding: 10px 20px
+
+
+
+        &.expanded 
+            padding-bottom: 40px
+
+            .service__content
+                grid-template-rows: 1fr
+
+            .services__arr
+                transform: rotate(-180deg)
+                background: transparent !important
+                color: var(--c-red) !important
+                border: 1px var(--c-red) solid
+
+            .service__content-inner
+
+                +mw(800)
+                    padding-top: 15px
+
+
+        .services__title-wrap
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-bottom: 25px
+
+            +mw(800)
+                padding-bottom: 0
+
+            .services__title
+
+                &-name
+                    font-family: Montserrat
+                    font-size: 30px
+                    font-weight: 500
+                    line-height: 30px
+                    color: rgba(46, 46, 46, 1)
+
+                &-num
+                    font-family: Montserrat
+                    font-size: 26px
+                    font-weight: 500
+                    line-height: 26px
+                    color: rgba(46, 46, 46, 0.7)
+
+            .services__title-mob
+                display: none
+                gap: 5px
+
+                +mw(800)
+                    display: flex
+
+
+                &-top
+                    height: 20px
+                    display: flex
+                    align-items: center
+
+                &-num
+                    font-family: HelveticaNeueCyr
+                    font-size: 12px
+                    font-weight: 400
+                    line-height: 9.6px
+                    color: rgba(46, 46, 46, 1)
+                    
+
+
+                &-bottom
+
+                &-name
+                    font-family: HelveticaNeueCyr
+                    font-size: 16px
+                    font-weight: 500
+                    line-height: 16px
+                    padding-bottom: 4px
+
+
+                &-price
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 500
+                    line-height: 16.8px
+                    color: var(--c-red)
+
+
+
+            
+
+            .services__right
+                display: flex
+                align-items: center
+                gap: 35px
+
+
+            .services__price
+                color: var(--c-red)
+                font-family: Montserrat
+                font-size: 26px
+                font-weight: 500
+                line-height: 26px
+
+
+
+            .services__arr
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 45px
+                height: 45px
+                border-radius: 50px
+                background: var(--c-red)
+                color: #fff
+                cursor: pointer
+                transition: .2s
+
+                &:hover
+                    background: var(--c-red-h)
+
+                +mw(800)
+                    width: 25px
+                    height: 25px
+
+                    svg
+                        width: 15px
+                        height: 10px
+
+        .service__content
+            display: grid
+            grid-template-rows: 0fr
+            transition: .2s
+            
+
+            .service__content-inner
+                overflow: hidden
+                display: flex
+                gap: 10px
+
+   
+
+                +mw(600)
+                    flex-direction: column-reverse
+
+                .service__text
+                    flex: 1.5
+                    font-family: Montserrat
+                    font-size: 22px
+                    font-weight: 400
+                    line-height: 26.4px
+                    color: rgba(46, 46, 46, 0.7)
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+
+                    +mw(800)
+                        font-size: 14px
+                        line-height: 16px
+
+                    .service__text-main
+                        
+                    .service__text-bottom
+                        padding-top: 20px
+                
+
+                .service__img
+                    flex: 1
+                    
+                        
+.services__view-all
+    font-family: Montserrat
+    font-size: 16px
+    font-weight: 700
+    line-height: 19.2px
+    color: var(--c-red)
+    padding-top: 25px
+    border-bottom: 1px solid var(--c-red)
+    display: block
+    width: fit-content
+    margin: 0 auto
+

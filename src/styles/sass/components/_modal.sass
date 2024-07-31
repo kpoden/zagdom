@@ -1,0 +1,296 @@
+.modal 
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    z-index: 1
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: #00000048
+    z-index: 10000
+    transition: .2s
+    padding: 0 20px
+
+    +mw(800)
+        padding: 0
+
+
+
+
+    &__content 
+        position: relative
+        background-color: #fefefe
+        padding: 0
+        width: fit-content
+        min-width: 320px
+        min-height: 480px
+        max-width: 740px
+        margin: 20px auto
+        top: 10%
+        color: #1E2021
+        overflow: hidden
+        border-radius: 24px
+
+        +mw(800)
+            min-height: 400px
+            max-width: 90%
+
+
+
+
+    &.opened 
+        opacity: 1
+        visibility: visible
+
+    &__close-cross
+        position: absolute
+        top: 40px
+        right: 80px
+        cursor: pointer
+        width: 40px
+        height: 40px
+        
+
+        +mw(800)
+            top: 40px
+            right: 20px
+
+        &:hover::after
+            background: var(--c-grey)
+
+        &:hover::before
+            background: var(--c-grey)
+
+        
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            width: 28px
+            height: 2px
+            background: #1A1A1A
+            transform: translate(-50%, -50%) rotate(45deg) 
+            top: 50%
+            left: 50%
+            transition: .2s
+
+            +mw(800)
+                width: 20px
+
+            
+
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            width: 28px
+            height: 2px
+            background: #1A1A1A
+            transform: translate(-50%, -50%) rotate(-45deg) 
+            top: 50%
+            left: 50%
+            transition: .2s
+
+            +mw(800)
+                width: 20px
+
+
+
+    &__content-inner
+        padding: 70px 80px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+        
+
+        +mw(1000)
+            padding: 50px 40px
+
+        +mw(800)
+            padding: 50px 20px
+
+    &__header
+        color: var(--c-font)
+        font-size: 36px
+        padding-bottom: 12px
+        font-weight: 400
+        
+        +mw(1000)
+            font-size: 25px; 
+
+        +mw(800)
+            font-size: 20px; 
+
+
+
+
+        
+    &__form
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+
+    &__input-wrap
+        padding-bottom: 12px
+        
+
+        +mw(800)
+            padding-bottom: 0
+
+    &__input
+        height: 54px
+        border-radius: 8px
+        background:#F5F5F5
+        border: 1px solid transparent
+        transition: .2s
+        color: rgba(0, 0, 0, 0.90)
+        font-size: 24px
+        padding: 0 30px
+
+        &:focus
+            border: 1px solid #12406e6b
+
+        +mw(800)
+            font-size: 14px
+            height: 35px
+            padding: 0 15px
+        
+
+        &::placeholder
+            color: rgba(0, 0, 0, 0.60)
+            font-size: 24px
+
+            +mw(800)
+                font-size: 14px
+
+
+    &__submit-wrap
+        width: 100%
+
+    &__btn
+        width: 100%
+        font-size: 20px
+
+        +mw(800)
+            font-size: 16px
+
+    
+
+
+
+.callback__modal
+
+    +mw(1300)
+
+    +mw(800)
+
+
+
+.thanksCallback__modal,
+.thanksOrder__modal,
+.thanksSubscribe__modal
+    display: flex
+    flex-direction: column
+    align-items: center
+   
+
+    .modal__img
+        margin: 0 auto
+        width: 60px
+        height: 60px
+
+    .modal__header
+        padding-top: 40px
+        text-align: center
+        font-size: 36px
+
+        +mw(800)
+            font-size: 20px
+
+    .modal__text
+        text-align: center
+        color: rgba(0, 0, 0, 0.60)
+        font-size: 24px
+        line-height: 130%
+
+        +mw(800)
+            font-size: 14px
+
+    .modal__btn
+        margin-top: 80px
+
+        +mw(800)
+            margin-top: 35px
+
+
+        
+.policy__checkbox
+    display: flex
+    margin-right: auto
+    align-items: center
+    gap: 22px
+    position: relative
+    margin-top: 8px
+    margin-bottom: 30px
+
+    +mw(800)
+        margin-top: 20px
+        gap: 10px
+
+.policy__checkbox-input
+    display: none
+
+.policy__checkbox-input:checked ~ .policy__checkbox-square .policy__checkbox-checkmark
+    display: block
+
+.policy__checkbox-checkmark
+    position: absolute
+    width: 12px
+    height: 20px
+    border-top: 4px solid var(--c-font)
+    border-left: 4px solid var(--c-font)
+    display: none
+    top: 40%
+    left: 50%
+    transform: translate(-50%, -50%) rotate(-135deg)
+    caret-color: transparent;
+
+    +mw(800)
+        width: 8px
+        height: 14px
+        border-top: 2px solid var(--c-font)
+        border-left: 2px solid var(--c-font)
+
+
+.policy__checkbox-square
+    width: 26px
+    height: 26px
+    background: #fff
+    border: 1px solid var(--c-font)
+    position: relative
+    flex-shrink: 0
+
+    +mw(800)
+        width: 24px
+        height: 24px
+
+.policy__checkbox-text
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 130%
+
+    +mw(800)
+        font-size: 10px
+        font-weight: 400
+        line-height: 130%
+
+.policy-err
+    position: absolute
+    top: 30px
+    

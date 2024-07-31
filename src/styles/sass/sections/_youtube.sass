@@ -1,0 +1,175 @@
+.youtube
+    padding-bottom: 150px
+
+    +mw(1200)
+        padding-bottom: 100px
+
+    +mw(800)
+        padding-bottom: 60px
+
+    .section-title__wrap
+        align-items: center
+
+    .section-title__inner 
+        display: flex
+        align-items: center
+        gap: 10px
+
+        .yt-mob
+            display: none
+
+            +mw(800)
+                display: block
+
+    .inline-title
+
+        .yt-mob
+            display: none
+
+            +mw(800)
+                display: inline
+
+
+    .youtube__title-link
+        background: rgba(246, 246, 246, 1)
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 44px
+        border-radius: 4px
+        gap: 9px
+        width: 262px
+        font-size: 18px
+        font-weight: 600
+        line-height: 21.6px
+
+
+        +mw(800)
+            display: none
+
+
+
+    .youtube__link-mob
+        background: rgba(246, 246, 246, 1)
+        display: none
+        align-items: center
+        justify-content: center
+        height: 44px
+        border-radius: 4px
+        gap: 9px
+        width: 100%
+        margin-top: 30px
+        color: rgba(46, 46, 46, 0.7)
+        font-size: 16px
+        font-weight: 500
+        line-height: 19.2px
+
+
+        +mw(800)
+            display: flex
+
+
+
+    .youtube__inner
+        
+        .youtube__slider
+
+            .youtube__slide
+                
+                
+                iframe
+                    height: 250px
+                    border-radius: 12px
+
+                    +mw(800)
+                        height: 167px
+
+                .youtube__info
+                    color: var(--c-dark)
+                    padding-top: 15px
+
+                .youtube__title
+                    font-size: 20px
+                    font-weight: 700
+                    line-height: 24px
+                    padding-bottom: 5px
+
+                    +mw(800)
+                        font-size: 14px
+                        line-height: 16.8px
+
+
+
+                .youtube__descr
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 19.2px
+
+                    +mw(800)
+                        font-size: 14px
+                        line-height: 16.8px
+
+
+
+    .youtube__video-inner
+        display: flex
+        gap: 30px
+
+        +mw(1000)
+            flex-direction: column
+            gap: 15px
+
+
+        .youtube__video
+            flex-shrink: 0
+            width: 55%
+            height: 410px
+            border-radius: 8px
+            overflow: hidden
+
+            +mw(1000)
+                width: 100%
+
+            +mw(600)
+                height: 200px
+
+            iframe
+
+
+        .youtube__descr
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+
+            .youtube__titles
+                display: flex
+                flex-direction: column
+                gap: 20px
+
+                +mw(1000)
+                    padding-bottom: 20px
+
+            .youtube__title
+                font-size: 30px
+                font-weight: 500
+                line-height: 36px
+
+                +mw(800)
+                    font-family: Montserrat
+                    font-size: 20px
+                    font-weight: 700
+                    line-height: 24px
+
+
+
+            .youtube__text 
+                font-size: 16px
+                font-weight: 400
+                line-height: 19.2px
+
+                +mw(800)
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 16.8px
+

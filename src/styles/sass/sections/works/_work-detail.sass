@@ -1,0 +1,240 @@
+.work-detail
+
+    .work-detail__main
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        padding-bottom: 150px
+        grid-column-gap: 40px
+
+
+        +mw(1000)
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+        +mw(800)
+            padding-bottom: 60px
+
+
+        h1
+            font-size: 54px;
+            font-weight: 700;
+            line-height: 54px;
+            padding-bottom: 20px
+
+            +mw(1000)
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 30px;
+
+
+        p 
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            color: rgba(46, 46, 46, 0.7)
+
+            +mw(1000)
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.8px;
+
+
+        .work-detail__top.desktop
+            +mw(1000)
+                display: none
+
+        .work-detail__top.mob
+            display: none
+
+            +mw(1000)
+                display: block
+
+        .work-detail__bottom
+
+        .work-detail__main-sliders
+            max-width: 660px
+
+            +mw(1200)
+                max-width: 550px
+
+            +mw(1100)   
+                max-width: 500px
+
+            +mw(1000)   
+                max-width: 100%
+
+            
+
+            .work-detail__main-slider
+                margin-bottom: 20px
+                position: relative
+
+                +mw(600)
+                    margin-bottom: 5px
+                
+
+                .work-detail__main-slider-img
+                    height: 468px
+                    position: relative
+                    display: block
+                    overflow: hidden
+                    border-radius: 10px
+
+                    +mw(1000)
+                        height: 350px
+
+                    +mw(600)
+                        height: 215px
+
+                    img
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        transition: .3s
+
+
+                .slider-block-arr
+                    width: 30px
+                    height: 30px
+                    border: 1px solid rgba(231, 231, 231, 1)
+                    background: rgba(255, 255, 255, 1);
+                    border-radius: 20px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    cursor: pointer
+                    position: absolute
+                    top: 45%
+                    z-index: 10
+
+                    +mw(600)
+                        width: 24px
+                        height: 24px
+
+                        svg
+                            width: 6px
+                            height: 12px
+
+                    &.swiper-button-disabled
+                        opacity: .7
+                        cursor: auto;
+
+
+
+
+
+                .work-detail__arr-next
+                    right: 15px
+                .work-detail__arr-prev
+                    left: 15px
+
+
+            .work-detail__nav-slider.swiper 
+
+                .work-detail__nav-slider-img
+                    border-radius: 4px
+                    overflow: hidden
+                    height: 100px
+                    position: relative
+                    display: block
+
+                    +mw(600)
+                        height: 55px
+
+                    img
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        transition: .3s
+
+
+
+    .work-detail__desc
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        gap: 20px
+
+
+
+        .work-detail__info
+            background: rgba(246, 246, 246, 1);
+            padding: 20px
+            border-radius: 10px
+            margin-bottom: 20px
+
+            .work-detail__info-title
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24px;
+                padding-bottom: 30px
+
+
+            .work-detail__info-chars
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 40px
+
+                +mw(600)
+                    display: flex
+                    flex-direction: column
+                    gap: 15px
+
+                .work-detail__info-col
+                    display: flex
+                    flex-direction: column
+                    gap: 15px
+
+                    .work-detail__info-row
+                        display: flex
+                        gap: 10px
+                        padding: 3px 0
+                        border-bottom: 1px solid rgba(231, 231, 231, 1)
+
+                        .work-detail__info-name
+                            font-family: HelveticaNeueCyr;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 19.2px;
+                            text-align: left;
+                            color: rgba(46, 46, 46, 0.7)
+
+                            +mw(600)
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 16.8px;
+
+
+
+                        .work-detail__info-val
+                            font-family: Montserrat
+                            font-size: 16px
+                            font-weight: 500
+                            line-height: 19.2px
+
+                            +mw(600)
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 16.8px;
+
+
+
+
+
+        .work-detail__info-btns
+            display: flex
+            gap: 30px
+
+            +mw(600)
+                flex-direction: column
+                gap: 10px
+
+        .work-detail__info-btn
+            border: 1px solid rgba(177, 20, 19, 1)

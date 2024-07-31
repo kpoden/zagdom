@@ -1,0 +1,771 @@
+<!DOCTYPE html >
+<html lang="ru-RU">
+  <head>
+     <!--metatextblock-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    <link rel="canonical" href=""/>
+    <title>Клевер</title><!--metatextblock-->
+<!--favicon block-->
+<!--/favicon block-->
+<!--assets block-->
+    <link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="libs/nouislider.min.css"/>
+    <link rel="stylesheet" href="styles/app.css"/><script src="https://api-maps.yandex.ru/v3/?apikey=660142c5-d428-48b4-a928-18718ab1e350&lang=ru_RU"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<!--/assets block-->
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="container works-page">
+      <header class="header wrapper"><a class="header__logo" href="/"><img src="images/header/logo.png" alt=""/></a>
+        <div class="header__menu">
+          <div class="header__links">
+            <div class="header__link"><a class="header__link-name">Проекты</a>
+              <svg width="10" height="6">
+                <use xlink:href="images/sprite.svg#arr-down"></use>
+              </svg>
+              <div class="header__submenu"> 
+                <div class="header__submenu-inner"> <a class="header__submenu-link" href="#">Строительство коттеджей</a><a class="header__submenu-link" href="#">Строительство фундаментов</a><a class="header__submenu-link" href="#">Земельные учатки </a><a class="header__submenu-link" href="#">Инженерные сети</a><a class="header__submenu-link" href="#">Проектирование</a><a class="header__submenu-link" href="#">Фасадные работы</a></div>
+              </div>
+            </div>
+            <div class="header__link"><a class="header__link-name">Услуги</a>
+              <svg width="10" height="6">
+                <use xlink:href="images/sprite.svg#arr-down"></use>
+              </svg>
+              <div class="header__submenu"> 
+                <div class="header__submenu-inner"> <a class="header__submenu-link" href="#">Строительство коттеджей</a><a class="header__submenu-link" href="#">Строительство фундаментов</a><a class="header__submenu-link" href="#">Земельные учатки </a><a class="header__submenu-link" href="#">Инженерные сети</a><a class="header__submenu-link" href="#">Проектирование</a><a class="header__submenu-link" href="#">Фасадные работы</a></div>
+              </div>
+            </div>
+            <div class="header__link"><a class="header__link-name">О компании</a>
+              <svg width="10" height="6">
+                <use xlink:href="images/sprite.svg#arr-down"></use>
+              </svg>
+              <div class="header__submenu"> 
+                <div class="header__submenu-inner"> <a class="header__submenu-link" href="#">Строительство коттеджей</a><a class="header__submenu-link" href="#">Строительство фундаментов</a><a class="header__submenu-link" href="#">Земельные учатки </a><a class="header__submenu-link" href="#">Инженерные сети</a><a class="header__submenu-link" href="#">Проектирование</a><a class="header__submenu-link" href="#">Фасадные работы</a></div>
+              </div>
+            </div>
+            <div class="header__link"><a class="header__link-name">Как мы строим</a>
+              <svg width="10" height="6">
+                <use xlink:href="images/sprite.svg#arr-down"></use>
+              </svg>
+              <div class="header__submenu"> 
+                <div class="header__submenu-inner"> <a class="header__submenu-link" href="#">Строительство коттеджей</a><a class="header__submenu-link" href="#">Строительство фундаментов</a><a class="header__submenu-link" href="#">Земельные учатки </a><a class="header__submenu-link" href="#">Инженерные сети</a><a class="header__submenu-link" href="#">Проектирование</a><a class="header__submenu-link" href="#">Фасадные работы</a></div>
+              </div>
+            </div>
+            <div class="header__link"><a class="header__link-name">Ипотека</a>
+              <svg width="10" height="6">
+                <use xlink:href="images/sprite.svg#arr-down"></use>
+              </svg>
+              <div class="header__submenu"> 
+                <div class="header__submenu-inner"> <a class="header__submenu-link" href="#">Строительство коттеджей</a><a class="header__submenu-link" href="#">Строительство фундаментов</a><a class="header__submenu-link" href="#">Земельные учатки </a><a class="header__submenu-link" href="#">Инженерные сети</a><a class="header__submenu-link" href="#">Проектирование</a><a class="header__submenu-link" href="#">Фасадные работы</a></div>
+              </div>
+            </div>
+            <div class="header__link"><a class="header__link-name">Контакты</a></div>
+          </div>
+          <div class="header__cities cities">
+            <div class="cities-input">
+              <div class="cities__pin">
+                <svg width="18" height="18">
+                  <use xlink:href="images/sprite.svg#map-pin"></use>
+                </svg>
+              </div>
+              <div class="cities__choosen">Тюмень</div>
+              <div class="cities__arr">
+                <svg width="10" height="7">
+                  <use xlink:href="images/sprite.svg#tri"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="cities__results"> 
+              <div class="cities__results-inner"> <a class="cities__city" href="#">Челябинск</a><a class="cities__city" href="#">Екатеринбург</a><a class="cities__city" href="#">Орел</a><a class="cities__city" href="#">Санкт-Петербург</a><a class="cities__city" href="#">Иркутск</a></div>
+            </div>
+          </div>
+          <div class="header__search">
+            <div class="header__search-icon"> 
+              <svg width="22" height="22">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+            </div>
+            <div class="header__search-wrap">
+              <input class="header__search-input" type="text" placeholder="Поиск..."/>
+            </div>
+          </div>
+        </div>
+        <div class="header__contacts"><a class="header__phone" href="8 (3452) 49-24-86">8 (3452) 49-24-86</a>
+          <div class="header__socs"><a class="header__soc incoming" href="#">
+              <svg width="22" height="23">
+                <use xlink:href="images/sprite.svg#incoming"></use>
+              </svg></a><a class="header__soc" href="#">
+              <svg width="22" height="23">
+                <use xlink:href="images/sprite.svg#tg-r"></use>
+              </svg></a><a class="header__soc" href="#">
+              <svg width="22" height="23">
+                <use xlink:href="images/sprite.svg#wa-r"></use>
+              </svg></a><a class="header__soc" href="#">
+              <svg width="22" height="23">
+                <use xlink:href="images/sprite.svg#vi-r"></use>
+              </svg></a></div>
+        </div>
+        <div class="burger"><span></span><span></span><span></span></div>
+      </header>
+      <main>
+        <div class="breadcrumbs wrapper"><a class="breadcrumbs__item" href="/">Главная</a><a class="breadcrumbs__item" href="/">Строительство фундамнтов</a>
+          <div class="breadcrumbs__item cur">Монолитная плита</div>
+        </div>
+        <div class="main-screen">
+          <div class="main-screen__inner wrapper" style="background-image: url(images/techs/main.png)">
+            <div class="main-screen__content">
+              <div class="main-screen__left">
+                <div class="main-screen__headers">
+                  <h1>Монолитная плита</h1>
+                  <h2>надежность, прочность и безупречный стиль для вашего проекта!</h2>
+                </div>
+                <div class="main-screen__advs--mob">
+                  <div class="main-screen__adv"> 
+                    <li class="main-screen__adv-title">Более 5 000 проектов</li>
+                    <li class="main-screen__adv-subtitle">строим дома более 10 лет</li>
+                  </div>
+                  <div class="main-screen__adv"> 
+                    <li class="main-screen__adv-title">Гарантия 5 лет</li>
+                    <li class="main-screen__adv-subtitle">на строительство вашего дома</li>
+                  </div>
+                  <div class="main-screen__adv"> 
+                    <li class="main-screen__adv-title">Договор услуг</li>
+                    <li class="main-screen__adv-subtitle">фиксируем стоимость работ</li>
+                  </div>
+                </div>
+                <div class="btns"> 
+                  <div class="btn btn__red">Рассчитать стоимость</div>
+                  <div class="btn">Получить консультацию</div>
+                </div>
+              </div>
+              <div class="main-screen__right"> 
+                <div class="main-screen__advs">
+                  <div class="main-screen__adv"> 
+                    <div class="main-screen__adv-title">6 видов технологий</div>
+                  </div>
+                  <div class="main-screen__adv"> 
+                    <div class="main-screen__adv-title">6 видов технологий</div>
+                  </div>
+                  <div class="main-screen__adv"> 
+                    <div class="main-screen__adv-title">6 видов технологий</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desc wrapper"> 
+          <div class="row">
+            <div class="text">
+              <h2>Заговолок</h2>
+              <p>Плитный фундамент — это один из универсальных и надежных видов фундамента, который можно использовать под любое здание. Мало заглубленный плитный фундамент применяется при возведении домов из легких стройматериалов высотой не более 1.5 этажа и находится на поверхности почвы. Если здание выше 1.5 этажей и возводится из тяжелых стройматериалов, то необходимо укреплять плитный фундамент - сваями. Плитный фундамент глубокого заглубления – находится в глубине грунта на уровне не менее 1,8- 2,5 м. и используется  для получения цокольного этажа и подвального помещения. Важным качеством фундаментной плиты считается, то что одновременно это и фундамент и основание пола. Также можно заложить систему отопления (теплый пол) в тело плитного фундамента.</p>
+            </div><img src="images/slider-block/1.png" alt=""/>
+          </div>
+          <div class="row"><img src="images/slider-block/2.png" alt=""/>
+            <div class="text">
+              <h2>Заговолок</h2>
+              <p>Плитный фундамент — это один из универсальных и надежных видов фундамента, который можно использовать под любое здание. Мало заглубленный плитный фундамент применяется при возведении домов из легких стройматериалов высотой не более 1.5 этажа и находится на поверхности почвы. Если здание выше 1.5 этажей и возводится из тяжелых стройматериалов, то необходимо укреплять плитный фундамент - сваями. Плитный фундамент глубокого заглубления – находится в глубине грунта на уровне не менее 1,8- 2,5 м. и используется  для получения цокольного этажа и подвального помещения. Важным качеством фундаментной плиты считается, то что одновременно это и фундамент и основание пола. Также можно заложить систему отопления (теплый пол) в тело плитного фундамента.</p>
+            </div>
+          </div>
+          <div class="text">
+            <h2>Заговолок</h2>
+            <p>Плитный фундамент — это один из универсальных и надежных видов фундамента, который можно использовать под любое здание. Мало заглубленный плитный фундамент применяется при возведении домов из легких стройматериалов высотой не более 1.5 этажа и находится на поверхности почвы. Если здание выше 1.5 этажей и возводится из тяжелых стройматериалов, то необходимо укреплять плитный фундамент - сваями. Плитный фундамент глубокого заглубления – находится в глубине грунта на уровне не менее 1,8- 2,5 м. и используется  для получения цокольного этажа и подвального помещения. Важным качеством фундаментной плиты считается, то что одновременно это и фундамент и основание пола. Также можно заложить систему отопления (теплый пол) в тело плитного фундамента.</p>
+          </div>
+          <div class="row">
+            <div class="text">
+              <h2>Заговолок</h2>
+              <p>Плитный фундамент — это один из универсальных и надежных видов фундамента, который можно использовать под любое здание. Мало заглубленный плитный фундамент применяется при возведении домов из легких стройматериалов высотой не более 1.5 этажа и находится на поверхности почвы. Если здание выше 1.5 этажей и возводится из тяжелых стройматериалов, то необходимо укреплять плитный фундамент - сваями. Плитный фундамент глубокого заглубления – находится в глубине грунта на уровне не менее 1,8- 2,5 м. и используется  для получения цокольного этажа и подвального помещения. Важным качеством фундаментной плиты считается, то что одновременно это и фундамент и основание пола. Также можно заложить систему отопления (теплый пол) в тело плитного фундамента.</p>
+            </div><img src="images/slider-block/3.png" alt=""/>
+          </div>
+        </div>
+        <div class="quiz wrapper">
+          <h2>Квиз</h2>
+        </div>
+        <div class="stages wrapper"> 
+          <div class="section-title"><span class="red">Этапы строительства: </span> &nbsp; надежность и качество на каждом шаге!</div>
+          <div class="stages__inner">
+            <div class="stages__tabs tabs">
+              <div class="stages__tab tab" data-tab="Этап 1">Этап 1</div>
+              <div class="stages__tab tab" data-tab="Этап 2">Этап 2</div>
+              <div class="stages__tab tab" data-tab="Этап 3">Этап 3</div>
+              <div class="stages__tab tab" data-tab="Этап 4">Этап 4</div>
+              <div class="stages__tab tab" data-tab="Этап 5">Этап 5</div>
+              <div class="stages__tab tab" data-tab="Этап 5">Этап 6</div>
+            </div>
+            <div class="stages__list">
+              <div class="stages__block tab-block" data-tab="Этап 1">
+                <div class="stages__block-img"><img src="images/stages/1.png" alt=""/></div>
+                <div class="stages__block-content">
+                  <h2 class="stages__block-title">Этап 1 Формируем коммерческое предложение на основе ваших пожеланий:</h2>
+                  <div class="stages__block-list">
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">1</div>
+                      <div class="stages__block-item-text">Внимательно слушаем ваши пожелания, предпочтения и требования к проекту;</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">2</div>
+                      <div class="stages__block-item-text">Помогаем вам определиться с оптимальным вариантом проекта, учитывая ваши потребности и бюджет.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">3</div>
+                      <div class="stages__block-item-text">Формируем коммерческое предложение (КП), которое включает в себя детальное описание работ, смету расходов и сроки выполнения проекта.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">4</div>
+                      <div class="stages__block-item-text">Отвечаем на все ваши оставшиеся вопросы и предоставить необходимую консультацию.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="stages__block tab-block" data-tab="Этап 2">
+                <div class="stages__block-img"><img src="images/stages/1.png" alt=""/></div>
+                <div class="stages__block-content">
+                  <h2 class="stages__block-title">Этап 2 Формируем коммерческое предложение на основе ваших пожеланий:</h2>
+                  <div class="stages__block-list">
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">1</div>
+                      <div class="stages__block-item-text">Внимательно слушаем ваши пожелания, предпочтения и требования к проекту;</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">2</div>
+                      <div class="stages__block-item-text">Помогаем вам определиться с оптимальным вариантом проекта, учитывая ваши потребности и бюджет.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">3</div>
+                      <div class="stages__block-item-text">Формируем коммерческое предложение (КП), которое включает в себя детальное описание работ, смету расходов и сроки выполнения проекта.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">4</div>
+                      <div class="stages__block-item-text">Отвечаем на все ваши оставшиеся вопросы и предоставить необходимую консультацию.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="stages__block tab-block" data-tab="Этап 3">
+                <div class="stages__block-img"><img src="images/stages/1.png" alt=""/></div>
+                <div class="stages__block-content">
+                  <h2 class="stages__block-title">Этап 3 Формируем коммерческое предложение на основе ваших пожеланий:</h2>
+                  <div class="stages__block-list">
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">1</div>
+                      <div class="stages__block-item-text">Внимательно слушаем ваши пожелания, предпочтения и требования к проекту;</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">2</div>
+                      <div class="stages__block-item-text">Помогаем вам определиться с оптимальным вариантом проекта, учитывая ваши потребности и бюджет.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">3</div>
+                      <div class="stages__block-item-text">Формируем коммерческое предложение (КП), которое включает в себя детальное описание работ, смету расходов и сроки выполнения проекта.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">4</div>
+                      <div class="stages__block-item-text">Отвечаем на все ваши оставшиеся вопросы и предоставить необходимую консультацию.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="stages__block tab-block" data-tab="Этап 4">
+                <div class="stages__block-img"><img src="images/stages/1.png" alt=""/></div>
+                <div class="stages__block-content">
+                  <h2 class="stages__block-title">Этап 4 Формируем коммерческое предложение на основе ваших пожеланий:</h2>
+                  <div class="stages__block-list">
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">1</div>
+                      <div class="stages__block-item-text">Внимательно слушаем ваши пожелания, предпочтения и требования к проекту;</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">2</div>
+                      <div class="stages__block-item-text">Помогаем вам определиться с оптимальным вариантом проекта, учитывая ваши потребности и бюджет.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">3</div>
+                      <div class="stages__block-item-text">Формируем коммерческое предложение (КП), которое включает в себя детальное описание работ, смету расходов и сроки выполнения проекта.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">4</div>
+                      <div class="stages__block-item-text">Отвечаем на все ваши оставшиеся вопросы и предоставить необходимую консультацию.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="stages__block tab-block" data-tab="Этап 5">
+                <div class="stages__block-img"><img src="images/stages/1.png" alt=""/></div>
+                <div class="stages__block-content">
+                  <h2 class="stages__block-title">Этап 5 Формируем коммерческое предложение на основе ваших пожеланий:</h2>
+                  <div class="stages__block-list">
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">1</div>
+                      <div class="stages__block-item-text">Внимательно слушаем ваши пожелания, предпочтения и требования к проекту;</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">2</div>
+                      <div class="stages__block-item-text">Помогаем вам определиться с оптимальным вариантом проекта, учитывая ваши потребности и бюджет.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">3</div>
+                      <div class="stages__block-item-text">Формируем коммерческое предложение (КП), которое включает в себя детальное описание работ, смету расходов и сроки выполнения проекта.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">4</div>
+                      <div class="stages__block-item-text">Отвечаем на все ваши оставшиеся вопросы и предоставить необходимую консультацию.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="stages__block tab-block" data-tab="Этап 6">
+                <div class="stages__block-img"><img src="images/stages/1.png" alt=""/></div>
+                <div class="stages__block-content">
+                  <h2 class="stages__block-title">Этап 6 Формируем коммерческое предложение на основе ваших пожеланий:</h2>
+                  <div class="stages__block-list">
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">1</div>
+                      <div class="stages__block-item-text">Внимательно слушаем ваши пожелания, предпочтения и требования к проекту;</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">2</div>
+                      <div class="stages__block-item-text">Помогаем вам определиться с оптимальным вариантом проекта, учитывая ваши потребности и бюджет.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">3</div>
+                      <div class="stages__block-item-text">Формируем коммерческое предложение (КП), которое включает в себя детальное описание работ, смету расходов и сроки выполнения проекта.</div>
+                    </div>
+                    <div class="stages__block-item">
+                      <div class="stages__block-item-num">4</div>
+                      <div class="stages__block-item-text">Отвечаем на все ваши оставшиеся вопросы и предоставить необходимую консультацию.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><div class="table wrapper">
+<div class="section-title__wrap">
+<h2 class="section-title"> Таблица с ценами </h2>
+</div>
+<table class="">
+<tbody>
+<tr>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+</tr>
+<tr>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+</tr>
+<tr>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+</tr>
+<tr>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+</tr>
+<tr>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+</tr>
+<tr>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+</tr>
+<tr>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+</tr>
+<tr>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+<td>Цена</td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="youtube wrapper">
+          <div class="section-title__wrap">
+            <div class="section-title__inner"> 
+              <h2 class="section-title">Следите за нами на &nbsp; <span class="red-s">YouTube</span> </h2>
+              <svg class="yt-mob" width="27" height="20">
+                <use xlink:href="images/sprite.svg#yt"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="youtube__video-inner">
+            <div class="youtube__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3BwZ4ap4OXM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+            <div class="youtube__descr">
+              <div class="youtube__titles">
+                <div class="youtube__title">ДОМ ИЗ КЕРАМЗИТОБЛОКА в 2023 ЛУЧШЕ ГАЗОБЕТОНА? Обзор керамзитного дома 2 этажа с террасой и гаражом</div>
+                <div class="youtube__subtitle">В ролике познакомим с нашим новым объектом — двухэтажным домом из керамзитоблока с террасой и гаражом. Покажем планировку, расскажем все технологии, которые применили в строительстве дома из керамзитоблока. Приятного просмотра!</div>
+              </div><a class="youtube__title-link" href="#">
+                <svg width="30" height="30">
+                  <use xlink:href="images/sprite.svg#yt"></use>
+                </svg><span>Смотреть на Youtube</span></a><a class="youtube__link-mob" href="#">
+                <svg width="30" height="30">
+                  <use xlink:href="images/sprite.svg#yt"></use>
+                </svg><span>Смотреть на Youtube</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-block wrapper services-slider-block">
+          <div class="slider-block-next slider-block-arr">
+            <svg width="42" height="28">
+              <use xlink:href="images/sprite.svg#arr-r2"></use>
+            </svg>
+          </div>
+          <div class="slider-block-prev slider-block-arr">
+            <svg width="42" height="28">
+              <use xlink:href="images/sprite.svg#arr-l2"></use>
+            </svg>
+          </div>
+          <div class="slider-block__slider swiper"> 
+            <div class="swiper-wrapper"> 
+              <div class="slider-block__photo swiper-slide"><img src="images/services/slider/1.png" alt=""/></div>
+              <div class="slider-block__photo swiper-slide"><img src="images/services/slider/2.png" alt=""/></div>
+              <div class="slider-block__photo swiper-slide"><img src="images/services/slider/3.png" alt=""/></div>
+              <div class="slider-block__photo swiper-slide"><img src="images/services/slider/4.png" alt=""/></div>
+              <div class="slider-block__photo swiper-slide"><img src="images/services/slider/3.png" alt=""/></div>
+              <div class="slider-block__photo swiper-slide"><img src="images/services/slider/1.png" alt=""/></div>
+              <div class="slider-block__photo swiper-slide"><img src="images/services/slider/2.png" alt=""/></div>
+              <div class="slider-block__photo swiper-slide"><img src="images/services/slider/3.png" alt=""/></div>
+            </div>
+            <div class="slider__nav-wrap">
+              <div class="slider__arr arr-l">
+                <svg width="29" height="20">
+                  <use xlink:href="images/sprite.svg#arr-l2"></use>
+                </svg>
+              </div>
+              <div class="slider__nav"></div>
+              <div class="slider__arr arr-r">
+                <svg width="29" height="20">
+                  <use xlink:href="images/sprite.svg#arr-r2"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="faq wrapper">
+          <div class="section-title__wrap">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+          </div>
+          <div class="faq__inner">
+            <div class="faq__person">
+              <div class="faq__person-photo">
+                <div class="faq__img"><img src="images/faq/1.jpg" alt=""/></div>
+                <div class="faq__info">
+                  <div class="faq__name">Александр Александров</div>
+                  <div class="faq__position">Менеджер по продажам коттеджей</div>
+                </div>
+              </div>
+              <div class="faq__btn btn btn__red">Задать вопрос</div>
+            </div>
+            <div class="faq__list"> 
+              <div class="faq__item">
+                <div class="faq__title-wrap">
+                  <div class="faq__title">Какие категории домов у Вас есть?</div>
+                  <div class="faq__arr">
+                    <svg width="27" height="17">
+                      <use xlink:href="images/sprite.svg#arr-r2"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__content">
+                  <div class="faq__content-inner">
+                    <div class="faq__text">Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома. Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__title-wrap">
+                  <div class="faq__title">Какие категории домов у Вас есть?</div>
+                  <div class="faq__arr">
+                    <svg width="27" height="17">
+                      <use xlink:href="images/sprite.svg#arr-r2"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__content">
+                  <div class="faq__content-inner">
+                    <div class="faq__text">Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома. Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__title-wrap">
+                  <div class="faq__title">Какие категории домов у Вас есть?</div>
+                  <div class="faq__arr">
+                    <svg width="27" height="17">
+                      <use xlink:href="images/sprite.svg#arr-r2"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__content">
+                  <div class="faq__content-inner">
+                    <div class="faq__text">Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома. Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__title-wrap">
+                  <div class="faq__title">Какие категории домов у Вас есть?</div>
+                  <div class="faq__arr">
+                    <svg width="27" height="17">
+                      <use xlink:href="images/sprite.svg#arr-r2"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__content">
+                  <div class="faq__content-inner">
+                    <div class="faq__text">Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома. Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__title-wrap">
+                  <div class="faq__title">Какие категории домов у Вас есть?</div>
+                  <div class="faq__arr">
+                    <svg width="27" height="17">
+                      <use xlink:href="images/sprite.svg#arr-r2"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__content">
+                  <div class="faq__content-inner">
+                    <div class="faq__text">Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома. Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__title-wrap">
+                  <div class="faq__title">Какие категории домов у Вас есть?</div>
+                  <div class="faq__arr">
+                    <svg width="27" height="17">
+                      <use xlink:href="images/sprite.svg#arr-r2"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__content">
+                  <div class="faq__content-inner">
+                    <div class="faq__text">Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома. Мы предлагаем полный спектр услуг, начиная от разработки проекта и получения разрешительной документации, и заканчивая строительством и отделкой дома.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="footer wrapper">
+            <div class="footer__logo"><img src="images/header/logo.png"/>
+              <div class="footer__soc--mob"><a href="#">
+                  <svg width="26" height="26">
+                    <use xlink:href="images/sprite.svg#tg-r"> </use>
+                  </svg></a><a href="#">
+                  <svg width="26" height="26">
+                    <use xlink:href="images/sprite.svg#wa-r"> </use>
+                  </svg></a><a href="#">
+                  <svg width="26" height="26">
+                    <use xlink:href="images/sprite.svg#vi-r"> </use>
+                  </svg></a><a href="#">
+                  <svg width="26" height="26">
+                    <use xlink:href="images/sprite.svg#yt-r"> </use>
+                  </svg></a></div>
+            </div>
+            <div class="footer__main">
+              <div class="footer__links">
+                <div class="footer__contacts">
+                  <div class="footer__link-title mobile--only">КОНТАКТЫ</div>
+                  <div class="footer__contact">
+                    <div class="footer__contact-name">Тюмень:</div>
+                    <div class="footer__contact-value">8 (3452) 49-24-86 <br><br> пр. Воронинские горки, д. 101, корп. 4</div>
+                  </div>
+                  <div class="footer__contact">
+                    <div class="footer__contact-name">Екатеринбург:</div>
+                    <div class="footer__contact-value">8 (000) 000-20-20 <br><br> ул. Ленина 9, 3 этаж, офис 4</div>
+                  </div>
+                  <div class="footer__contact">
+                    <div class="footer__contact-name">Часы работы:</div>
+                    <div class="footer__contact-value">пн.-пт.: 9:00 - 20:00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__links desktop--only ft-link-list">
+                <div class="footer__link-title">КЛИЕНТАМ</div><a class="footer__link">О нас</a><a class="footer__link">Акции</a><a class="footer__link">Ипотека</a><a class="footer__link">Контакты</a>
+                <div class="footer__links-more hidden">Развернуть</div>
+              </div>
+              <div class="footer__links desktop--only ft-link-list">
+                <div class="footer__link-title">УСЛУГИ</div><a class="footer__link">Строительство коттеджей</a><a class="footer__link">Проектирование</a><a class="footer__link">Инженерные сети</a><a class="footer__link">Строительство фундаментов</a><a class="footer__link">Фасадные работы</a>
+                <div class="footer__links-more hidden">Развернуть</div>
+              </div>
+              <div class="footer__links desktop--only ft-link-list"><a class="footer__link-title">ПРОЕКТЫ</a>
+                <div class="footer__cols">
+                  <div class="footer__col"><a class="footer__link">Из газоблока</a><a class="footer__link">Из керамзитоблока</a><a class="footer__link">Из арболита</a><a class="footer__link">Обрезной и строганный брус</a><a class="footer__link">Профилированный брус</a><a class="footer__link">Лафет</a></div>
+                  <div class="footer__col"><a class="footer__link">Клееный брус</a><a class="footer__link">Оциллиндрованое бревно</a><a class="footer__link">Каркасный дом</a><a class="footer__link">Дом из сип-панелей</a><a class="footer__link">Купольные дома</a><a class="footer__link">Фахверковые дома</a></div>
+                </div>
+                <div class="footer__links-more hidden">Развернуть</div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="footer__legal">
+                <div class="footer__ip">ООО “Клевер”</div><a class="footer__policy" href="#">Политика конфиденциальности</a>
+              </div>
+              <div class="footer__footnote">*Предложение не является публичной офертой. Стоимость является ориентировочной и приведена исключительно в информационных целях. Цена может меняться от географического расположения строящегося объекта и рыночных изменений цен на строительные материалы.</div>
+            </div>
+          </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+        <script src="libs/swiper-bundle.min.js"></script>
+        <script src="libs/nouislider.min.js"></script>
+        <script src="libs/imask.js"></script>
+        <script src="libs/fslightbox.js"></script>
+        <script src="scripts/main.js"></script>
+      </main>
+    </div>
+    <div class="mob-menu">
+      <div class="mob-menu__inner">
+        <div class="search__header">
+          <div class="search__form">
+            <input class="search__form-input" type="text" name="search" placeholder="Поиск"/><a class="search__form-icon" href="#">
+              <svg width="22" height="22">
+                <use xlink:href="images/sprite.svg#search-mob"></use>
+              </svg></a>
+          </div>
+          <div class="mob-menu__cities-wrap toggle-wrap">
+            <div class="cities__form-input-wrap toggle-title">
+              <div class="cities__form-input">Екатеринбург</div>
+            </div>
+            <div class="mob-menu__cities toggle-outer">
+              <div class="mob-menu__cities-inner toggle-inner"><a class="cities__item" href="#">Тюмень</a><a class="cities__item" href="#">Екатеринбург</a><a class="cities__item" href="#">Санкт-Петербург</a><a class="cities__item" href="#">Магнитогорск</a><a class="cities__item" href="#">Москва</a><a class="cities__item" href="#">Ханты-Мансийск</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="mob-menu__list">
+          <div class="toggle-wrap">
+            <div class="mob-menu__cat-wrap toggle-title">
+              <div class="mob-menu__cat">Проекты</div>
+            </div>
+            <div class="mob-menu__submenu toggle-outer">
+              <div class="mob-menu__submenu-inner toggle-inner"><a class="mob-menu__item" href="#">Строительство коттеджей</a><a class="mob-menu__item" href="#">Строительство фундаментов</a><a class="mob-menu__item" href="#">Земельные учатки</a><a class="mob-menu__item" href="#">Инженерные сети</a><a class="mob-menu__item" href="#">Проектирование</a><a class="mob-menu__item" href="#">Фасадные работы</a></div>
+            </div>
+          </div>
+          <div class="toggle-wrap">
+            <div class="mob-menu__cat-wrap toggle-title">
+              <div class="mob-menu__cat">Услуги</div>
+            </div>
+            <div class="mob-menu__submenu toggle-outer">
+              <div class="mob-menu__submenu-inner toggle-inner"><a class="mob-menu__item" href="#">Строительство коттеджей</a><a class="mob-menu__item" href="#">Строительство фундаментов</a><a class="mob-menu__item" href="#">Земельные учатки</a><a class="mob-menu__item" href="#">Инженерные сети</a><a class="mob-menu__item" href="#">Проектирование</a><a class="mob-menu__item" href="#">Фасадные работы</a></div>
+            </div>
+          </div>
+          <div class="toggle-wrap">
+            <div class="mob-menu__cat-wrap toggle-title">
+              <div class="mob-menu__cat">О компании</div>
+            </div>
+            <div class="mob-menu__submenu toggle-outer">
+              <div class="mob-menu__submenu-inner toggle-inner"><a class="mob-menu__item" href="#">Строительство коттеджей</a><a class="mob-menu__item" href="#">Строительство фундаментов</a><a class="mob-menu__item" href="#">Земельные учатки</a><a class="mob-menu__item" href="#">Инженерные сети</a><a class="mob-menu__item" href="#">Проектирование</a><a class="mob-menu__item" href="#">Фасадные работы</a></div>
+            </div>
+          </div>
+          <div class="toggle-wrap">
+            <div class="mob-menu__cat-wrap toggle-title">
+              <div class="mob-menu__cat">Как мы строим</div>
+            </div>
+            <div class="mob-menu__submenu toggle-outer">
+              <div class="mob-menu__submenu-inner toggle-inner"><a class="mob-menu__item" href="#">Строительство коттеджей</a><a class="mob-menu__item" href="#">Строительство фундаментов</a><a class="mob-menu__item" href="#">Земельные учатки</a><a class="mob-menu__item" href="#">Инженерные сети</a><a class="mob-menu__item" href="#">Проектирование</a><a class="mob-menu__item" href="#">Фасадные работы</a></div>
+            </div>
+          </div>
+          <div class="toggle-wrap">
+            <div class="mob-menu__cat-wrap toggle-title">
+              <div class="mob-menu__cat">Ипотека</div>
+            </div>
+            <div class="mob-menu__submenu toggle-outer">
+              <div class="mob-menu__submenu-inner toggle-inner"><a class="mob-menu__item" href="#">Строительство коттеджей</a><a class="mob-menu__item" href="#">Строительство фундаментов</a><a class="mob-menu__item" href="#">Земельные учатки</a><a class="mob-menu__item" href="#">Инженерные сети</a><a class="mob-menu__item" href="#">Проектирование</a><a class="mob-menu__item" href="#">Фасадные работы</a></div>
+            </div>
+          </div>
+          <div class="toggle-wrap">
+            <div class="mob-menu__cat-wrap toggle-title">
+              <div class="mob-menu__cat">Услуги</div>
+            </div>
+            <div class="mob-menu__submenu toggle-outer">
+              <div class="mob-menu__submenu-inner toggle-inner"><a class="mob-menu__item" href="#">Строительство коттеджей</a><a class="mob-menu__item" href="#">Строительство фундаментов</a><a class="mob-menu__item" href="#">Земельные учатки</a><a class="mob-menu__item" href="#">Инженерные сети</a><a class="mob-menu__item" href="#">Проектирование</a><a class="mob-menu__item" href="#">Фасадные работы</a></div>
+            </div>
+          </div>
+          <div class="toggle-wrap">
+            <div class="mob-menu__cat-wrap toggle-title">
+              <div class="mob-menu__cat">Акции</div>
+            </div>
+            <div class="mob-menu__submenu toggle-outer">
+              <div class="mob-menu__submenu-inner toggle-inner"><a class="mob-menu__item" href="#">Строительство коттеджей</a><a class="mob-menu__item" href="#">Строительство фундаментов</a><a class="mob-menu__item" href="#">Земельные учатки</a><a class="mob-menu__item" href="#">Инженерные сети</a><a class="mob-menu__item" href="#">Проектирование</a><a class="mob-menu__item" href="#">Фасадные работы</a></div>
+            </div>
+          </div>
+          <div class="toggle-wrap">
+            <div class="mob-menu__cat-wrap toggle-title">
+              <div class="mob-menu__cat">Земельные участки</div>
+            </div>
+            <div class="mob-menu__submenu toggle-outer">
+              <div class="mob-menu__submenu-inner toggle-inner"><a class="mob-menu__item" href="#">Строительство коттеджей</a><a class="mob-menu__item" href="#">Строительство фундаментов</a><a class="mob-menu__item" href="#">Земельные учатки</a><a class="mob-menu__item" href="#">Инженерные сети</a><a class="mob-menu__item" href="#">Проектирование</a><a class="mob-menu__item" href="#">Фасадные работы</a></div>
+            </div>
+          </div>
+          <div class="toggle-wrap">
+            <div class="mob-menu__cat-wrap toggle-title">
+              <div class="mob-menu__cat">Контакты</div>
+            </div>
+            <div class="mob-menu__submenu toggle-outer">
+              <div class="mob-menu__submenu-inner toggle-inner"><a class="mob-menu__item" href="#">Строительство коттеджей</a><a class="mob-menu__item" href="#">Строительство фундаментов</a><a class="mob-menu__item" href="#">Земельные учатки</a><a class="mob-menu__item" href="#">Инженерные сети</a><a class="mob-menu__item" href="#">Проектирование</a><a class="mob-menu__item" href="#">Фасадные работы</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="mob-menu__contacts">
+          <div class="mob-menu__phones">
+            <div class="mob-menu__phone"><span>Тюмень:</span><a href="tel:8 (3452) 49-24-86">8 (3452) 49-24-86</a></div>
+            <div class="mob-menu__phone"><span>Екатеринбург:</span><a href="tel:8 (3452) 49-24-86">8 (3452) 49-24-86</a></div>
+          </div>
+          <div class="mob-menu__soc"><a href="#">
+              <svg width="32" height="32">
+                <use xlink:href="images/sprite.svg#mob-tg"></use>
+              </svg></a><a href="#">
+              <svg width="32" height="32">
+                <use xlink:href="images/sprite.svg#mob-wa"></use>
+              </svg></a><a href="#">
+              <svg width="32" height="32">
+                <use xlink:href="images/sprite.svg#mob-viber"></use>
+              </svg></a></div>
+        </div>
+        <div class="mob-menu__btn btn btn__red"><a href="#">Заказать</a></div>
+      </div>
+    </div>
+  </body>
+</html>

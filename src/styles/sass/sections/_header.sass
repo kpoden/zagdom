@@ -1,0 +1,221 @@
+
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px 0
+    font-family: Roboto
+
+
+    &__logo
+        max-width: 174px
+        width: 100%
+        border-right: 1px solid rgba(231, 231, 231, 1)
+        height: 38px
+
+        img
+            max-width: 126px
+
+            +mw(800)
+                max-width: 100%
+
+
+        +mw(800)
+            width: 96px
+            border-right: none
+
+
+    &__menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        padding: 0 20px
+        position: relative
+
+        +mw(800)
+            display: none
+
+
+
+    &__links
+        display: flex
+        align-items: center
+        margin-right: auto
+        gap: 10px
+
+        +mw(1200)
+            display: none
+
+
+
+    &__link
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 400
+        line-height: 16.8px
+        position: relative
+
+        &:hover > .header__submenu
+            opacity: 1
+            visibility: visible
+            padding-top: 10px
+
+
+
+    &__link-name
+
+        &:hover
+            color: var(--c-red-h)
+
+    &__submenu
+        opacity: 0
+        visibility: hidden
+        position: absolute
+        top: calc(100% + 0px)
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 10
+        padding-top: 15px
+        transition: .2s
+        
+
+
+    &__submenu-inner    
+        padding: 10px
+        display: flex
+        flex-direction: column
+        gap: 10px
+        background: rgba(246, 246, 246, 1)
+
+
+    &__submenu-link
+        
+
+
+    &__cities
+        position: relative
+
+        &:hover > .cities__results
+            opacity: 1
+            visibility: visible
+            padding-top: 10px
+
+        +mw(1200)
+            margin-left: auto
+
+
+
+    .cities-input
+        display: flex
+        align-items: center
+        margin: 0 20px
+        gap: 5px
+        cursor: pointer
+        transition: .2s
+
+        &:hover
+            color: var(--c-red-h)
+
+    
+    .cities__results
+        opacity: 0
+        visibility: hidden
+        position: absolute
+        top: calc(100% + 0px)
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 10
+        padding-top: 15px
+        transition: .2s
+
+    .cities__results-inner
+        padding: 10px
+        display: flex
+        flex-direction: column
+        gap: 10px
+        background: rgba(246, 246, 246, 1)
+
+    .cities__city
+        cursor: pointer
+
+        &:hover
+            color: var(--c-red-h)
+        
+
+
+    &__search
+        display: flex
+        align-items: center
+        cursor: pointer
+
+
+        
+
+        &.search-active .header__search-wrap
+            opacity: 1
+            visibility: visible
+            width: 100%
+
+
+    &__search-wrap
+        position: absolute
+        height: 50px
+        right: 0
+        width: 50px
+        opacity: 0
+        visibility: hidden
+        background: #fff
+        z-index: 10
+        transition: .2s
+        overflow: hidden
+        margin: 0 10px
+        
+
+
+    &__search-input
+        height: 100%
+        width: 100%
+        padding: 0px 20px
+        border-radius: 5px
+        border: 2px solid #eee
+
+
+    &__search-icon
+        z-index: 15
+
+        &:hover
+            color: var(--c-red-h)
+        
+        
+
+
+    &__search-results
+
+
+    &__contacts
+        display: flex
+        align-items: center
+        flex-shrink: 0
+        gap: 10px
+
+        +mw(1200)
+            margin-right: 20px
+
+    &__phone
+
+        +mw(1200)
+            display: none
+
+
+    &__socs
+        display: flex
+        gap: 8px
+
+    &__soc
+        color: var(--c-red)
+
+        &:hover
+            color: var(--c-red-h)
+
+   

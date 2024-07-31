@@ -1,0 +1,156 @@
+.meet.wrapper 
+    display: flex
+    padding: 60px
+    border-radius: 20px
+    gap: 80px
+    background: var(--c-light-grey)
+    margin-bottom: 150px
+    align-items: center
+
+    +mw(800)    
+        margin-bottom: 60px
+        flex-direction: column-reverse
+        justify-content: center
+        border-radius: 8
+        padding: 40px 20px
+        gap: 20px
+
+    
+
+    .meet__left
+        display: flex
+        flex-direction: column
+        gap: 40px
+        align-items: flex-start
+        justify-content: center
+
+        +mw(800)
+            align-items: center
+            gap: 10px
+
+        .meet__title
+            font-size: 54px;
+            font-weight: 700;
+            line-height: 54px;
+
+            +mw(800)
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: center;
+
+
+
+        .meet__text
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 26.4px;
+
+            +mw(800)    
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.8px;
+                text-align: center;
+                color: rgba(46, 46, 46, 0.7)
+
+
+
+
+        .meet__btn
+            max-width: 300px
+
+            +mw(800)
+                max-width: 100%
+
+
+        .desk-btn
+            +mw(800)
+                display: none
+
+
+
+    .meet__right
+        width: 320px
+        height: 320px
+        flex-shrink: 0
+        
+        +mw(800)
+            width: 100%
+
+        .meet__expert
+            position: relative
+            width: 100%
+            height: 100%
+            border-radius: 10px
+            overflow: hidden
+
+            &::after
+                content: ""
+                background: linear-gradient(180deg, rgba(46, 46, 46, 0) 45.81%, #2E2E2E 100%);
+                position: absolute
+                top: 0
+                left: 0 
+                width: 100%
+                height: 100%
+                z-index: 5
+
+
+            img
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                object-fit: cover
+                transition: .3s
+
+            .meet__expert-desc
+                position: absolute
+                z-index: 10
+                bottom: 20px
+                color: #fff
+                width: 100%
+
+                .meet__expert-name
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 26.4px;
+                    text-align: center;
+                    padding-bottom: 5px
+
+                    +mw(800)
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 19.2px;
+
+                .meet__expert-position
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.2px;
+                    text-align: center;
+
+                    +mw(800)
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16.8px;
+
+
+    .mob-form
+        display: none
+        padding-top: 20px
+
+        +mw(800)
+            display: flex
+            flex-direction: column
+            gap: 10px
+
+            .meet__btn
+                margin-top: 10px
+
+        .meet__policy
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.8px;
+            text-align: center;
+            color: rgba(46, 46, 46, 0.7)
+            

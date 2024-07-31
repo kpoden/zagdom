@@ -1,0 +1,341 @@
+
+.mob-menu
+    width: 100%
+    background: #fff
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    min-width: 360px
+    display: none
+    min-height: 100vh
+    margin-top: 70px
+    background: #f6f6f6
+    border-top: 1px solid rgba(231, 231, 231, 1)
+    padding: 20px 15px 0
+
+    &.opened
+        display: block
+
+
+    &__inner
+
+
+
+    &.active-menu
+        opacity: 1
+        visibility: visible
+
+
+    .close-mobMenu
+        cursor: pointer
+        color: var(--c-font)
+
+        &:hover
+            color: #6c7bad
+
+
+    .search__header
+        padding-bottom: 20px
+        .search__form
+            position: relative
+            margin-bottom: 10px
+            height: 44px
+
+            .search__form-input
+                height: 100%
+                width: 100%
+                border-radius: 8px
+                background: #fff
+                padding: 10px 15px
+                font-family: Roboto
+                font-size: 12px
+                font-weight: 400
+                line-height: 14.4px
+
+
+
+            .search__form-icon
+                position: absolute
+                right: 10px
+                top: 50%
+                transform: translateY(-50%)
+                color: rgba(46, 46, 46, 0.7)
+                cursor: pointer
+
+
+    .mob-menu__cities
+        border-radius: 0 0 8px 8px
+        background: #fff
+
+
+    .toggle-wrap
+
+        &.opened
+
+            .toggle-outer
+                grid-template-rows: 1fr
+
+            .toggle-inner
+                padding: 0px 15px 10px
+
+            .toggle-title::after
+                transform: translateY(-50%) rotate(45deg)
+
+            .cities__form-input
+                border-radius: 8px 8px 0 0
+
+            .mob-menu__submenu-inner
+                padding: 10px 15px !important
+                margin-top: 5px
+
+
+    .toggle-title
+        cursor: pointer
+    .toggle-outer
+        display: grid
+        grid-template-rows: 0fr
+        overflow: hidden
+        transition: .2s
+
+    .mob-menu__cities-inner
+
+    .toggle-inner
+        position: relative
+        overflow: hidden
+        padding: 0px 15px
+
+        
+
+    .cities__form-input-wrap
+        position: relative
+
+        &::after
+            content: ""
+            width: 10px
+            height: 10px
+            border: .5px solid rgba(46, 46, 46, 1)
+            border-width: 0 .5px .5px 0 
+            position: absolute
+            right: 15px
+            top: 50%
+            transform: translateY(-50%) rotate(-45deg)
+            transition: .2s
+
+
+    .cities__form-input
+        height: 44px
+        width: 100%
+        border-radius: 8px
+        background: #fff
+        padding: 10px 15px
+        font-family: Roboto
+        font-size: 12px
+        font-weight: 400
+        line-height: 14.4px
+        display: flex
+        align-items: center
+        color: rgba(46, 46, 46, 0.7)
+
+
+    .cities__item
+        display: flex
+        align-items: center
+        padding-left: 10px
+        height: 24px
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        border-radius: 4px
+
+        &:hover
+            background: rgba(246, 246, 246, 1)
+
+                
+
+
+
+
+
+    .mob-menu__list
+        display: flex
+        flex-direction: column
+        gap: 10px
+
+    .mob-menu__submenu-inner
+        display: flex
+        flex-direction: column
+        gap: 10px
+        padding: 0px 15px !important
+        transition: .2s
+
+    .mob-menu__cat-wrap
+        color: rgba(46, 46, 46, 1)
+        position: relative
+        transition: .2s
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 500
+        line-height: 16.41px
+
+        &::after
+            content: ""
+            width: 10px
+            height: 10px
+            border: .5px solid rgba(46, 46, 46, 1)
+            border-width: 0 .5px .5px 0 
+            position: absolute
+            right: 15px
+            top: 50%
+            transform: translateY(-50%) rotate(-45deg)
+            transition: .2s
+
+
+    .mob-menu__item
+        color: rgba(46, 46, 46, 1)
+        position: relative
+        transition: .2s
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 400
+        line-height: 16.41px
+        
+
+
+     
+            
+
+        &:hover
+            color: var(--c-red)
+
+            &::after
+                border-color: var(--c-red)
+                right: 12px
+
+
+        &:active
+            color: var(--c-red)
+
+            &::after
+                border-color: var(--c-red)
+                right: 12px
+
+    .mob-menu__contacts
+        padding-top: 30px
+        padding-bottom: 30px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .mob-menu__phones
+            display: flex
+            flex-direction: column
+            gap: 10px
+
+            .mob-menu__phone
+                display: flex
+                flex-direction: column
+                gap: 5px
+
+                span
+                    font-family: HelveticaNeueCyr
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 16.8px
+                    color: rgba(46, 46, 46, 0.7);
+
+
+
+                a
+                    font-family: Roboto
+                    font-size: 14px
+                    font-weight: 500
+                    line-height: 16.41px
+
+
+
+        .mob-menu__soc
+            display: flex
+            flex-direction: column
+            display: none
+
+            a
+                color: #2E2E2E
+
+                &:hover
+                    color: var(--c-red)
+        
+                &:active
+                    color: var(--c-red)
+
+
+    .mob-menu__btn
+        display: none
+        
+
+
+
+.burger
+    width: 35px
+    height: 35px
+    gap: 3px
+    background: var(--c-red)
+    border-radius: 50px
+    flex-shrink: 0
+    cursor: pointer
+    transition: .2s
+    position: relative
+    display: none
+
+    &:hover
+        background: var(--c-red-h)
+
+    +mw(1200)
+        display: block
+
+
+    span
+        width: 18px
+        height: 2px
+        background: #fff
+        transform-origin: center center
+        position: absolute
+        left: 50%
+        transition: .1s
+
+        &:first-child
+            top: 11px
+            transform: translate(-50%, 0)
+
+        &:nth-child(2)
+            top: 50%
+            transform: translate(-50%, 0)
+
+        &:last-child
+            bottom: 11px
+            transform: translate(-50%, 0)
+
+
+    &.opened
+
+        span:first-child
+            top: 50%
+            transform: translate(-50%, -50%) rotate(45deg)
+            width: 20px
+
+
+        span:nth-child(2)
+            display: none
+
+
+        span:last-child
+            top: 50%
+            transform: translate(-50%, -50%) rotate(-45deg)
+            width: 20px
+
+
+    
+
+
+

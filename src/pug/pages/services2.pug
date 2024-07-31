@@ -1,0 +1,33 @@
+doctype html 
+html(lang="ru-RU")
+    include ../layout/head
+    body
+        .overlay
+        .container.main-page
+
+            
+        
+            include ../layout/header
+
+            main
+                .breadcrumbs.wrapper
+                    a.breadcrumbs__item(href="/") Главная
+                    .breadcrumbs__item.cur Строительство фундаментов
+
+                include ../layout/services/main-screen2.pug
+                include ../layout/services/services-techs.pug
+                include ../layout/stages.pug
+                include ../layout/services/services-desc.pug
+
+                include ../layout/services/services-slider-block.pug
+                include ../layout/quiz.pug
+                include ../layout/services/table.pug
+                
+                include ../layout/services.pug
+                include ../layout/youtube-video.pug
+                include ../layout/faq.pug
+
+
+
+            include ../layout/footer.pug
+

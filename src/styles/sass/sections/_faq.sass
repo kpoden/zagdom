@@ -1,0 +1,202 @@
+.faq
+    padding-bottom: 150px
+
+    +mw(800)
+        padding-bottom: 60px
+
+    .faq__inner
+        display: flex
+        gap: 30px
+        justify-content: space-between
+
+        +mw(800)
+            flex-direction: column-reverse
+            align-items: center
+
+    .faq__person
+        width: 100%
+        max-width: 430px
+        display: flex
+        gap: 25px
+        flex-direction: column
+        align-items: center
+        min-width: 250px
+
+        +mw(800)
+            gap: 20px
+
+        &-photo
+            display: flex
+            flex-direction: column
+            gap: 25px
+
+            +mw(800)
+                flex-direction: row
+                align-items: center
+                gap: 15px
+
+
+
+        .faq__img
+            height: 430px
+            width: 100%
+            position: relative
+
+            +mw(800)
+                height: 86px
+                width: 96px
+                border-radius: 8px
+                overflow: hidden
+
+            img
+                position: absolute
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+
+        .faq__info
+            text-align: center
+
+            +mw(800)
+                text-align: left
+
+
+            .faq__name
+                padding-bottom: 10px
+                font-size: 22px
+                font-weight: 700
+                line-height: 26.4px
+
+                +mw(800)
+                    font-size: 14px
+                    font-weight: 700
+                    line-height: 16.8px
+                    padding-bottom: 5px
+
+
+            .faq__position
+                font-size: 16px
+                font-weight: 400
+                line-height: 19.2px
+
+                +mw(800)
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 16.8px
+
+
+
+    .faq__list
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+        +mw(800)
+            gap: 10px
+
+        .faq__item
+            background: var(--c-light-grey)
+            border-radius: 4px
+
+            +mw(800)
+                border-radius: 9px
+
+
+            &.expanded 
+                padding-bottom: 40px
+
+                .faq__content
+                    grid-template-rows: 1fr
+
+                .faq__arr
+                    transform: rotate(-180deg)
+                    background: transparent !important
+                    color: var(--c-red) !important
+                    border: 1px var(--c-red) solid
+                    
+
+                .faq__content-inner
+
+                    +mw(800)
+                        padding-top: 15px
+
+            .faq__title-wrap
+                display: flex
+                justify-content: space-between
+                align-items: center
+                gap: 15px
+                padding: 25px 30px 25px
+                cursor: pointer
+
+                +mw(800)
+                    padding: 10px 20px
+
+                .faq__title
+                    font-size: 24px
+                    font-weight: 500
+                    line-height: 26px
+                    color: var(--c-dark)
+
+                    +mw(800)
+                        font-size: 16px
+                        font-weight: 500
+                        line-height: 16px
+
+
+
+        
+                .faq__arr
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 30px
+                    height: 30px
+                    border-radius: 50px
+                    background: var(--c-red)
+                    color: #fff
+                    cursor: pointer
+                    transition: .2s
+                    flex-shrink: 0
+
+                    svg
+                        width: 17px
+                        height: 11px
+
+                    &:hover
+                        background: var(--c-red-h)
+
+                    +mw(800)
+                        width: 25px
+                        height: 25px
+
+                        svg
+                            width: 15px
+                            height: 10px
+
+
+            .faq__content
+                
+                display: grid
+                grid-template-rows: 0fr
+                transition: .2s
+
+                .faq__content-inner
+                    overflow: hidden
+                    padding: 0 30px
+
+                    +mw(800)
+                        padding: 0 20px
+                    
+
+                    .faq__text
+                        font-size: 22px
+                        font-weight: 400
+                        line-height: 26.4px
+                        color: rgba(46, 46, 46, 0.7)
+
+                        +mw(800)
+                            font-size: 14px
+                            line-height: 16px
+
+

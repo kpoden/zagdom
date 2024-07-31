@@ -1,0 +1,48 @@
+.calc.wrapper
+    .section-title__wrap.desktop--only
+        .section-title__inner
+            h2.section-title Ваш путь к новому дому начинается здесь: рассчитайте 
+                
+            h2.section-title  <span class="spacer"></span><span class="red">ипотеку с помощью нашего калькулятора &nbsp;</span> легко и быстро!
+
+    .section-title__wrap.mobile--only
+        .section-title__inner
+            h2.section-title Ваш путь к новому дому начинается здесь: рассчитайте <span class="red">ипотеку с помощью нашего калькулятора &nbsp;</span> легко и быстро!
+
+
+
+    .calc__inner 
+        form.calc__form
+            .calc__form-title Ипотечный калькулятор
+            .calc__form-input-wrap
+                .calc__form-input-title Стоимость объекта
+                input.calc__form-input-inp.inp(type="text" data-field="price" placeholder="5 000 000 ₽")
+            .calc__form-input-title Первоначальный взнос
+            .calc__form-input-line
+                .calc__form-input-wrap
+                    input.calc__form-input-inp.inp(type="text" data-field="payment" placeholder="200 000 ₽")
+                .calc__form-input-wrap
+                    input.calc__form-input-inp.inp(type="text" data-field="percent" placeholder="5%")
+
+            .calc__form-input-title Срок кредита
+
+            .calc__range
+            .calc__pips 
+                .calc__pip 1 год
+                .calc__pip 30 год
+
+        .calc__result
+
+            .calc__result-wrap
+                .calc__result-name Сумма кредита:
+                .calc__result-value(data-res="total") 0 ₽
+            .calc__result-wrap
+                .calc__result-name Ежемесячный платеж:
+                .calc__result-value(data-res="monthly") от 0 ₽/ мес.
+            .calc__result-wrap
+                .calc__result-name Банки партнеры:
+                .calc__result-value 
+                    img(src="images/calc/banks.png", alt="")
+
+            .calc__btn.btn.btn__red Получить консультацию по ипотеке
+                
