@@ -1,9 +1,13 @@
 
 .other-works-single
-    margin-bottom: 150px
+    margin-bottom: 100px
 
     +mw(800)
-        margin-bottom: 60px
+        margin-bottom: 10px
+
+
+    .swiper-wrapper
+        padding-bottom: 50px
 
 
     h2
@@ -17,6 +21,52 @@
             font-weight: 600;
             line-height: 24px;
             padding-bottom: 15px
+
+    .other-works__slider
+        overflow: visible
+
+        &::after
+            content: ""
+            position: absolute
+            right: 100%
+            width: 100vw
+            height: 110%
+            top: -30px
+            background: #fff
+            z-index: 10
+
+
+    .other-works__arr
+        position: absolute
+        top: 35%
+        z-index: 20
+        color: var(--c-dark)
+        width: 70px
+        height: 70px
+        background: rgba(246, 246, 246, 1);
+        border: 1.56px solid rgba(231, 231, 231, 1)
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 70px
+        transition: .2s
+        cursor: pointer
+
+        &:hover
+            background: #e7e7e7
+
+        &.arr-l
+            left: 0px
+        &.arr-r
+            right: 0px
+
+        &.swiper-button-disabled
+            opacity: 0
+            visibility: hidden
+
+        +mw(600)
+            display: none
+
 
 
 

@@ -249,7 +249,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function servicesAccordeon() {
 
-      const servicesArrs = document.querySelectorAll('.services__arr');
+      const servicesArrs = document.querySelectorAll('.services__title-wrap');
 
       servicesArrs.forEach(arr=>{
         arr.addEventListener('click', ()=>{
@@ -416,6 +416,46 @@ window.addEventListener('DOMContentLoaded', () => {
   teamSliderInit()
 
 
+  function teamSliderSmInit() {
+  
+    const teamSliderInit = new Swiper('.team__slider--sm', {
+      slidesPerView: 1.2,
+      spaceBetween: 15,
+      // autoplay: {
+      //     delay: 3000,
+      //     disableOnInteraction: true
+      //   },
+      speed: 1000,
+      navigation: {
+        nextEl: ".arr-r.team__arr",
+        prevEl: ".arr-l.team__arr",
+      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      breakpoints: {
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+
+        },
+        900: {
+          slidesPerView: 2.5,
+          
+        },
+        600: {
+          slidesPerView: 2.1,
+
+        },
+      }
+
+    });
+  }
+
+  teamSliderSmInit()
+
+
   function youtubeSliderInit() {
   
     const youtubeSliderInit = new Swiper('.youtube__slider', {
@@ -497,12 +537,24 @@ window.addEventListener('DOMContentLoaded', () => {
     return Number(input.replace(/\D/g, ''));
   }
 
-  function inputLimit(input, limit) {
-    if (input.value > limit) {
-    input.value = limit;
-    }
-    }
+  // function inputLimit(input, limit) {
+  //     if (input.value > limit) {
+  //     input.value = limit;
+  //     }
+  //   }
 
+  function inputLimit(input, limit) {
+    if (isNaN(input.value) || input.value === '') {
+        input.value = ''; // Очистить поле, если не число
+    } else {
+        const value = Number(input.value);
+        if (value > limit) {
+         input.value = limit; // Устанавливаем лимит
+        } else {
+         input.value = value; // Убеждаемся, что значение является числом
+        }
+    }
+    }
 
 
 
@@ -922,6 +974,32 @@ function mapInit() {
         })
       }
       toggleMenusInit()
+
+
+
+      function inpPlaceholders() {
+        const inpWraps = document.querySelectorAll('.input-wrap');
+
+        inpWraps.forEach(inpWrap => {
+
+          const inp = inpWrap.querySelector('.inp');
+          const inpName = inpWrap.querySelector('.inp-name');
+
+          inp.addEventListener('focus', ()=>{
+            inpName.classList.add('hidden');
+          })
+
+          inp.addEventListener('blur', ()=>{
+            if(inp.value=='') {
+              inpName.classList.remove('hidden');
+            }
+            
+          })
+          
+        })
+      }
+
+      inpPlaceholders();
 
 
 })

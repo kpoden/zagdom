@@ -1,28 +1,37 @@
-h1 {
+
+.order-form {
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+    background: #f5f5f5;
+    padding: 20px 40px;
+}
+
+.order-form h1 {
     color: #333;
     font-size: 1.2em;
     margin-bottom: 20px;
 }
-.red_title {
+.order-form .red_title {
     font-size: 35px;
     color: #B11413;
     margin: 0;
 }
-.black_title {
+.order-form .black_title {
     font-size: 35px;
     color: #2E2E2E;
     margin: 0 0 0 105px;
 }
-.form-section {
+.order-form .form-section {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     margin-top: 40px;
 }
-.form-group {
+.order-form .form-group {
     width: 48%;
 }
-.form-group label {
+.order-form .form-group label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
@@ -76,14 +85,14 @@ h1 {
     flex: 0 0 50%;
     display: flex;
 }
-.buttons {
+.order-form .buttons {
     margin-top: 20px;
     flex: 0 0 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.buttons button {
+.order-form .buttons button {
     text-decoration: none;
     color: #fff;
     border: none;
@@ -113,12 +122,12 @@ h1 {
     border-radius: 5px;
     font-size: 14px;
 }
-.price {
+.order-form .price {
     margin: 0 0 0 10px;
 }
 
 
-.radio-label {
+.order-form .radio-label {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
@@ -170,7 +179,7 @@ h1 {
     .form-section {
         flex-direction: column;
     }
-    .form-group {
+    .order-form .form-group {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -198,10 +207,10 @@ h1 {
         text-align: center;
         margin: 10px 0;
     }
-    .form-section {
+    .order-form .form-section {
         flex-direction: column;
     }
-    .form-group {
+    .order-form .form-group {
         width: 100%;
         margin-bottom: 20px;
     }
