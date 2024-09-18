@@ -633,7 +633,7 @@
               <div class="getcat__title">Получите каталог проектов</div>
               <div class="getcat__subtitle">Оставьте адрес электронной почты или номер телефона, на который мы вышлем Вас полный каталог проектов</div>
             </div>
-            <form class="getcat__form">
+            <form class="getcat__form" id="getcat" data-send="true">
               <label class="input-wrap">
                 <input class="inp" type="text" name="name" data-required="data-required"/><span class="inp-name">Ваше имя</span>
               </label>
@@ -657,7 +657,7 @@
                   </svg><span>Viber</span>
                 </div>
               </div>
-              <div class="getcat__submit btn btn__red" type="submit">Получить каталог</div>
+              <button class="getcat__submit btn btn__red" type="submit">Получить каталог</button>
               <div class="getcat__policy">Нажимая кнопку «отправить», Вы подтверждаете согласие с политикой обработки персональных данных</div>
             </form>
           </div>
@@ -1023,25 +1023,14 @@
               <div class="stages__block tab-block" data-tab="Этап 1">
                 <div class="stages__block-img"><img src="images/stages/1.png" alt=""/></div>
                 <div class="stages__block-content">
-                  <h2 class="stages__block-title">Этап 1 Формируем коммерческое предложение на основе ваших пожеланий:</h2>
-                  <div class="stages__block-list">
-                    <div class="stages__block-item">
-                      <div class="stages__block-item-num">1</div>
-                      <div class="stages__block-item-text">Внимательно слушаем ваши пожелания, предпочтения и требования к проекту;</div>
-                    </div>
-                    <div class="stages__block-item">
-                      <div class="stages__block-item-num">2</div>
-                      <div class="stages__block-item-text">Помогаем вам определиться с оптимальным вариантом проекта, учитывая ваши потребности и бюджет.</div>
-                    </div>
-                    <div class="stages__block-item">
-                      <div class="stages__block-item-num">3</div>
-                      <div class="stages__block-item-text">Формируем коммерческое предложение (КП), которое включает в себя детальное описание работ, смету расходов и сроки выполнения проекта.</div>
-                    </div>
-                    <div class="stages__block-item">
-                      <div class="stages__block-item-num">4</div>
-                      <div class="stages__block-item-text">Отвечаем на все ваши оставшиеся вопросы и предоставить необходимую консультацию.</div>
-                    </div>
-                  </div>
+                  <h2>Этап 1 Формируем коммерческое предложение на основе ваших пожеланий:</h2>
+                  <p>Плитный фундамент — это один из универсальных и надежных видов фундамента, который можно использовать под любое здание. Мало заглубленный плитный фундамент применяется при возведении домов из легких стройматериалов высотой не более 1.5 этажа и находится на поверхности почвы.</p>
+                  <ol>
+                    <li>Внимательно слушаем ваши пожелания, предпочтения и требования к проекту;</li>
+                    <li>Помогаем вам определиться с оптимальным вариантом проекта, учитывая ваши потребности и бюджет.</li>
+                    <li>Формируем коммерческое предложение (КП), которое включает в себя детальное описание работ, смету расходов и сроки выполнения проекта.</li>
+                    <li>Отвечаем на все ваши оставшиеся вопросы и предоставить необходимую консультацию.</li>
+                  </ol>
                 </div>
               </div>
               <div class="stages__block tab-block" data-tab="Этап 2">
@@ -1585,6 +1574,19 @@
                     <div class="youtube__title">Как не надо строить дома из бруса. Обзор фатальных ошибок</div>
                     <div class="youtube__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti libero non ut id quisquam! Magni</div>
                   </div>
+                </div>
+              </div>
+              <div class="slider__nav-wrap">
+                <div class="slider__arr arr-l">
+                  <svg width="29" height="20">
+                    <use xlink:href="images/sprite.svg#arr-l2"></use>
+                  </svg>
+                </div>
+                <div class="slider__nav"></div>
+                <div class="slider__arr arr-r">
+                  <svg width="29" height="20">
+                    <use xlink:href="images/sprite.svg#arr-r2"></use>
+                  </svg>
                 </div>
               </div>
             </div><a class="youtube__link-mob" href="#">

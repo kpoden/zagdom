@@ -1,8 +1,21 @@
 
 .services-slider-block
-    padding-bottom: 150px
+    margin-bottom: 150px
     +mw(800)
-        padding-bottom: 60px
+        margin-bottom: 60px
+
+
+    .slider-block-arr
+        width: 30px !important
+        height: 30px !important
+
+    .slider-block-next
+	    right: 15px !important
+
+    .slider-block-prev
+	    left: 15px !important
+
+
 
         
 .slider-block
@@ -34,7 +47,8 @@
         color: var(--c-dark)
         z-index: 1
         position: absolute
-        top: 250px
+        top: 50%
+        transform: translateY(-50%)
         width: 70px
         height: 70px
         background: rgba(246, 246, 246, 1);

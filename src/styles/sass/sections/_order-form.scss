@@ -1,8 +1,7 @@
 
 .order-form {
-    margin: 50px auto;
+    margin: 0px auto 160px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 80%;
     background: #f5f5f5;
     padding: 20px 40px;
 }
@@ -201,6 +200,11 @@
 }
 
 @media (max-width: 768px) {
+
+    
+    .order-form {
+        margin: 0px auto 60px;
+    }
 
     .red_title, .black_title {
         font-size: 28px;

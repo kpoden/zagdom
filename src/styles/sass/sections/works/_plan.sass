@@ -20,7 +20,8 @@
 
 
     .plan__imgs
-        display: flex
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px
 
         +mw(900)
@@ -30,7 +31,6 @@
             position: relative
             height: 660px
             display: block
-            width: 50%
             overflow: hidden
 
             +mw(1200)

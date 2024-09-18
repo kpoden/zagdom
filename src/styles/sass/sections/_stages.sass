@@ -97,12 +97,13 @@
                 +mw(1000)
                     padding: 30px 20px
                 
-                .stages__block-title
+                h2
                     font-family: Montserrat
                     font-size: 30px
                     font-weight: 500
                     line-height: 36px
                     padding-bottom: 30px
+                    margin: 0
 
                     +mw(1200)
                         font-size: 24px
@@ -114,10 +115,10 @@
                         line-height: 21.6px
 
 
-                .stages__block-text
-                    font-size: 30px;
-                    font-weight: 500;
-                    line-height: 36px;
+                p
+                    font-size: 20px
+                    font-weight: 400
+                    padding-bottom: 20px
 
                     +mw(800)
                         font-size: 14px;
@@ -125,35 +126,52 @@
                         line-height: 16.8px;
 
 
-                .stages__block-list
+                ol
                     display: flex
                     flex-direction: column
                     gap: 25px
+                    list-style-type: none
+                    counter-reset: num
+                    padding-left: 65px
+
 
                     +mw(800)
                         gap: 15px
 
-                    .stages__block-item
-                        display: flex
-                        gap: 15px
-                        align-items: center
+                    li
+                        font-family: Montserrat
+                        font-size: 16px
+                        font-weight: 400
+                        line-height: 19.2px
+                        color: var(--c-dark)
+                        position: relative
 
                         +mw(800)
-                            flex-direction: column
-                            align-items: flex-start
-                            gap: 5px
+                            font-size: 16px
+                            font-weight: 500
+                            line-height: 21.79px
 
-                        .stages__block-item-num
-                            font-family: Open Sans
+                        &::marker
+                            display: none
+                            
+
+                        &:before 
+                            content: counter(num); 
+                            counter-increment: num;
+                            display: inline-block;
+                            position: absolute;
+                            top: 0;
+                            left: -65px
+                            width: 40px;
+                            height: 40px;
+                            background: #2E2E2E
+                            color: #fff
+                            text-align: center;
+                            border-radius: 50%;
+                            font-family: OpenSans
                             font-size: 19.2px
                             font-weight: 600
                             line-height: 23px
-                            width: 40px
-                            height: 40px
-                            border-radius: 80px
-                            background: #000
-                            color: #fff
-                            flex-shrink: 0
                             display: flex
                             align-items: center
                             justify-content: center
@@ -165,17 +183,9 @@
                                 line-height: 14px
 
 
-                        .stages__block-item-text
-                            font-family: Montserrat
-                            font-size: 16px
-                            font-weight: 400
-                            line-height: 19.2px
-                            color: var(--c-dark)
 
-                            +mw(800)
-                                font-size: 16px
-                                font-weight: 500
-                                line-height: 21.79px
+                        .stages__block-item-text
+
 
 
 

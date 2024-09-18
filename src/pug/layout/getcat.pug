@@ -7,7 +7,7 @@
             .getcat__title Получите каталог проектов
             .getcat__subtitle Оставьте адрес электронной почты или номер телефона, на который мы вышлем Вас полный каталог проектов
 
-        form.getcat__form
+        form.getcat__form(id="getcat" data-send="true")
             label.input-wrap
                 input.inp(type="text" name="name" data-required)
                 span.inp-name Ваше имя
@@ -32,6 +32,6 @@
 
                     span Viber
 
-            .getcat__submit.btn.btn__red(type="submit") Получить каталог
+            button.getcat__submit.btn.btn__red(type="submit") Получить каталог
             .getcat__policy Нажимая кнопку «отправить», Вы подтверждаете согласие с политикой обработки персональных данных
         

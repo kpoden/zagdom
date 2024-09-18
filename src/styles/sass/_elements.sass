@@ -12,6 +12,7 @@
         
         h2
             display: flex
+            gap: 10px
 
             +mw(800)
                 display: block
@@ -69,7 +70,8 @@
         display: block
 
 
-
+h2
+    color: #fff
 
 ._locked
     overflow: hidden
@@ -83,7 +85,7 @@
 .hidden
     display: none !important
 
-.block
+.display-block
     display: block !important
 
 .red
@@ -172,9 +174,19 @@ textarea,
 
 
 ._error-input
-    border: 1.5px solid var(--c-red) !important
-    color:  var(--c-red)
+    border: 3px solid var(--c-red) !important
 
+
+._abs-err
+    position: absolute
+    top: -30px
+    color:  #C00
+    font-size: 14px
+    font-weight: 500
+
+
+form
+    position: relative
 
 
 .breadcrumbs
